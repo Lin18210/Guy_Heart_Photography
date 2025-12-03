@@ -61,15 +61,19 @@ const SLIDES = [
 ];
 
 const Heroslider = () => {
-  const [current, setCurrent] = useState(0);
-  const [isAnimating, setIsAnimating] = useState(false);
+    const [current, setCurrent] = useState(0);
+    const [isAnimating, setIsAnimating] = useState(false);
 
   useEffect(() => {
+    if (isAnimating) return;
+
+    // Auto-advance slides every 1.5 seconds
     const timer = setInterval(() => {
       nextSlide();
-    }, 1500); // Changed from 6000 to 1500 (1.5 seconds)
+    }, 2000);
+    
     return () => clearInterval(timer);
-  }, [current]);
+  }, [current, isAnimating]); // Added isAnimating to dependencies to restart timer after animation finishes
 
   const nextSlide = () => {
     if (isAnimating) return;
