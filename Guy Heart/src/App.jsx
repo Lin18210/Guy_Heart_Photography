@@ -13,11 +13,13 @@ import Services from './pages/Services.jsx';
 import Portfolio from './pages/Portfolio.jsx';
 import Blog from './pages/Blog.jsx';
 import Video from './pages/Video.jsx';
+import ScrollToTop from "./Components/ScrollToTop.jsx";
 
 function App() {
 
   return(
     <Router>
+      <ScrollToTop/>
       <Navbar/>
       <Routes>
         <Route path="/" element={<HomePage/>}/>
