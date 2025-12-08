@@ -3,12 +3,12 @@ import { Menu, X, ChevronLeft, ChevronRight, Facebook, Instagram, Twitter } from
 import LogoImg from '../assets/Logo.png';
 
 const NAV_LINKS = [
-  { name: 'Home', href: '#' },
-  { name: 'Portfolio', href: '#portfolio' },
-  { name: 'Services', href: '#services' },
-  { name: 'Video', href: '#video' },
-  { name: 'Blog', href: '#blog' },
-  { name: 'About', href: '#about' },
+  { name: 'Home', href: '/' },
+  { name: 'Portfolio', href: '/portfolio' },
+  { name: 'Services', href: '/services' },
+  { name: 'Video', href: '/video' },
+  { name: 'Blog', href: '/blog' },
+  { name: 'About', href: '/about' },
 ];
 
 const Navbar = () => {
@@ -50,7 +50,7 @@ const [isScrolled, setIsScrolled] = useState(false);
                 href={link.href} 
                 className={`relative text-base text-gray-300 hover:text-yellow-400 group transition-all duration-300 ease-in-out transform hover:scale-110 ${
                   isScrolled ? 'text-gray-600' : 'text-gray-200'
-                } ${link.name === 'Home' ? 'border-b-2 border-[#C5A059]' : ''}`}
+                } ${link.name === 'Home' ? ' border-[#C5A059]' : ''}`}
               >
                 {link.name} <span className='absolute -bottom-1 left-0 w-full h-[2px] bg-yellow-500 transform scale-x-0 group-hover:scale-x-100 transition-transform duration-300 ease-in-out origin-center'></span>
               </a>
