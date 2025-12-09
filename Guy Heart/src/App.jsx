@@ -14,6 +14,7 @@ import Portfolio from './pages/Portfolio.jsx';
 import Blog from './pages/Blog.jsx';
 import Video from './pages/Video.jsx';
 import ScrollToTop from "./Components/ScrollToTop.jsx";
+import Contact from "./pages/Contact.jsx";
 
 function App() {
 
@@ -28,6 +29,7 @@ function App() {
         <Route path="/about" element={<About/>}/>
         <Route path="/blog" element={<Blog/>}/>
         <Route path="/video" element={<Video/>}/>
+        <Route path="/contact" element={<Contact/>}/>
       </Routes>
       <Footer/>
     </Router>

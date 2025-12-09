@@ -40,11 +40,6 @@ const SERVICES_DATA = [
 ];
 
 const ServicesSlider = () => {
-  // CONFIGURATION
-  // We want 3 items focused, but we want them to look like they are in a "continuous strip"
-  // So we set width to 25% (4 items fit). 
-  // 3 items * 25% = 75% occupied. 
-  // Remaining 25% is split: 12.5% left peek, 12.5% right peek.
   const itemWidthPercent = 25; 
   const itemsInFocus = 3;
   

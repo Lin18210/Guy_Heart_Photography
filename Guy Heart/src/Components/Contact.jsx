@@ -10,7 +10,7 @@ const ContactSection = () => {
     lastName: '',
     email: '',
     date: '',
-    country: 'Thailand', // Defaulting to the placeholder text
+    country: '+66', 
     phone: '',
     source: '',
     message: ''
@@ -65,7 +65,7 @@ const ContactSection = () => {
           lastName: '',
           email: '',
           date: '',
-          country: 'Thailand',
+          country: '',
           phone: '',
           source: '',
           message: ''
@@ -119,7 +119,7 @@ const ContactSection = () => {
                     onChange={handleChange}
                     placeholder="First Name" 
                     required
-                    className="w-full border border-gray-300 p-3 text-sm text-gray-600 focus:outline-none focus:border-[#7a93a5] transition-colors"
+                    className="w-full border p-3 text-sm text-gray-600 focus:outline-none focus:border-[#7a93a5] transition-colors"
                   />
                 </div>
                 <div className="w-1/2">
@@ -130,7 +130,7 @@ const ContactSection = () => {
                     onChange={handleChange}
                     placeholder="Last Name" 
                     required
-                    className="w-full border border-gray-300 p-3 text-sm text-gray-600 focus:outline-none focus:border-[#7a93a5] transition-colors"
+                    className="w-full border p-3 text-sm text-gray-600 focus:outline-none focus:border-[#7a93a5] transition-colors"
                   />
                 </div>
               </div>
@@ -147,7 +147,7 @@ const ContactSection = () => {
                 value={formData.email}
                 onChange={handleChange}
                 required
-                className="w-full border border-gray-300 p-3 text-sm text-gray-600 focus:outline-none focus:border-[#7a93a5] transition-colors"
+                className="w-full border p-3 text-sm text-gray-600 focus:outline-none focus:border-[#7a93a5] transition-colors"
               />
             </div>
 
@@ -161,7 +161,7 @@ const ContactSection = () => {
                 name="date"
                 value={formData.date}
                 onChange={handleChange}
-                className="w-full md:w-1/2 border border-gray-300 p-3 text-sm text-gray-400 focus:outline-none focus:border-[#7a93a5] transition-colors uppercase"
+                className="w-full md:w-1/2 border p-3 text-sm text-gray-400 focus:outline-none focus:border-[#7a93a5] transition-colors uppercase"
               />
             </div>
 
@@ -172,14 +172,19 @@ const ContactSection = () => {
               </label>
               <div className="flex gap-4">
                 <div className="w-1/3">
-                  <input 
-                    type="text" 
-                    name="country"
-                    value={formData.country}
-                    onChange={handleChange}
-                    placeholder="Thailand" 
-                    className="w-full border border-gray-300 p-3 text-sm text-gray-600 focus:outline-none focus:border-[#7a93a5] transition-colors"
-                  />
+                <select
+                  name="countryCode"
+                  value={formData.countryCode}
+                  onChange={handleChange}
+                  className="w-full border p-3 text-sm text-gray-600 focus:outline-none focus:border-[#7a93a5] transition-colors"
+                >
+                  <option value="+66">TH +66</option>
+                  <option value="+65">SG +65</option>
+                  <option value="+60">MY +60</option>
+                  <option value="+95">MM +95</option>
+                  <option value="+1">US +1</option>
+                  <option value="+44">GB +44</option>
+                </select>
                   <span className="text-xs text-gray-400 mt-1 block">Country</span>
                 </div>
                 <div className="w-2/3">
@@ -188,10 +193,10 @@ const ContactSection = () => {
                     name="phone"
                     value={formData.phone}
                     onChange={handleChange}
-                    placeholder="+66" 
-                    className="w-full border border-gray-300 p-3 text-sm text-gray-600 focus:outline-none focus:border-[#7a93a5] transition-colors"
+                    placeholder="Enter your phone number" 
+                    className="w-full border p-3 text-sm text-gray-600 focus:outline-none focus:border-[#7a93a5] transition-colors"
                   />
-                  <span className="text-xs text-gray-400 mt-1 block">Number</span>
+                  <span className="text-xs text-gray-400 mt-1 block">Phone Number</span>
                 </div>
               </div>
             </div>
@@ -205,7 +210,7 @@ const ContactSection = () => {
                 name="source"
                 value={formData.source}
                 onChange={handleChange}
-                className="w-full border border-gray-300 p-3 text-sm text-gray-400 focus:outline-none focus:border-[#7a93a5] transition-colors bg-white"
+                className="w-full border p-3 text-sm text-gray-400 focus:outline-none focus:border-[#7a93a5] transition-colors bg-white"
               >
                 <option value="">Select an option</option>
                 <option value="Instagram">Instagram</option>
@@ -227,7 +232,7 @@ const ContactSection = () => {
                 value={formData.message}
                 onChange={handleChange}
                 placeholder="Tell us about your wedding vision, location, and what you dream of capturing."
-                className="w-full border border-gray-300 p-3 text-sm text-gray-600 focus:outline-none focus:border-[#7a93a5] transition-colors"
+                className="w-full border p-3 text-sm text-gray-600 focus:outline-none focus:border-[#7a93a5] transition-colors"
               ></textarea>
             </div>
 

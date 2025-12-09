@@ -7,7 +7,7 @@ import Logo from '../assets/Logo.png'
 
 const Footer = () => {
 return (
-    <footer className="bg-[#faf9f6] text-slate-500 py-16 px-4 border-t border-gray-100 font-sans">
+    <footer className="bg-[#faf9f6] text-slate-500 py-16 px-4 border-t border-gray-100 font-sans block">
       <div className="max-w-7xl mx-auto">
         
         {/* Main Footer Content - 4 Columns */}
