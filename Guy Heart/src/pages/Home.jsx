@@ -37,7 +37,6 @@ const Portfolio_Images = [portfolioImg1, portfolioImg2, portfolioImg3];
 const LOGOS = [logo1, logo2, logo3, logo4, logo5, logo6];
 
 // --- NEW DATA: MOMENT GALLERY ---
-// Using existing gallery images as placeholders for the 3x3 grid
 const MOMENT_GALLERY_IMAGES = [
   gallery1, gallery2, gallery3,
   gallery4, gallery5, gallery6,
@@ -45,7 +44,6 @@ const MOMENT_GALLERY_IMAGES = [
 ];
 
 // --- NEW DATA: FAQs ---
-// Data extracted from image_6.png
 const FAQ_DATA = [
   {
     question: "Which of the following are included in the starting price?",
@@ -70,7 +68,6 @@ const FAQ_DATA = [
 ];
 
 // --- NEW DATA: STATS ---
-// Data extracted from image_7.png
 const STATS_DATA = [
   { number: "10", label: "Years Experience" },
   { number: "20k+", label: "Photo Delivered" },
@@ -141,17 +138,17 @@ const BlurImage = ({ src, alt, className }) => {
 };
 
 
-// --- NEW HELPER COMPONENT: FAQ Accordion Item ---
+// --- HELPER COMPONENT: FAQ Accordion Item ---
 const FAQItem = ({ question, answer }) => {
   const [isOpen, setIsOpen] = useState(false);
 
   return (
     <div className="border-b border-gray-200 last:border-none">
       <button
-        className="w-full text-left py-6 flex justify-between items-center focus:outline-none group"
+        className="w-full text-left py-4 md:py-6 flex justify-between items-start md:items-center focus:outline-none group"
         onClick={() => setIsOpen(!isOpen)}
       >
-        <h4 className="font-serif text-[#7a93a5] text-lg md:text-xl group-hover:text-amber-400 transition-colors duration-300 pr-8">
+        <h4 className="font-serif text-[#7a93a5] text-base md:text-xl group-hover:text-amber-400 transition-colors duration-300 pr-4 leading-tight">
           {question}
         </h4>
         <svg
@@ -160,16 +157,16 @@ const FAQItem = ({ question, answer }) => {
           viewBox="0 0 24 24"
           strokeWidth={2}
           stroke="currentColor"
-          className={`w-5 h-5 text-amber-400 transform transition-transform duration-300 ${isOpen ? 'rotate-180' : ''}`}
+          className={`w-5 h-5 text-amber-400 flex-shrink-0 mt-1 md:mt-0 transform transition-transform duration-300 ${isOpen ? 'rotate-180' : ''}`}
         >
           <path strokeLinecap="round" strokeLinejoin="round" d="M19.5 8.25l-7.5 7.5-7.5-7.5" />
         </svg>
       </button>
       <div
-        className={`overflow-hidden transition-all duration-500 ease-in-out ${isOpen ? 'max-h-[500px] opacity-100 pb-6' : 'max-h-0 opacity-0'
+        className={`overflow-hidden transition-all duration-500 ease-in-out ${isOpen ? 'max-h-[800px] opacity-100 pb-6' : 'max-h-0 opacity-0'
           }`}
       >
-        <p className="font-serif text-[#7a93a5] text-lg md:text-md pr-8">{answer}</p>
+        <p className="font-serif text-[#7a93a5] text-sm md:text-md pr-0 md:pr-8 leading-relaxed">{answer}</p>
       </div>
     </div>
   );
@@ -177,18 +174,18 @@ const FAQItem = ({ question, answer }) => {
 
 const Home = () => {
   return (
-    <main className="flex-grow bg-white">
+    <main className="flex-grow bg-white overflow-x-hidden">
       <Heroslider />
 
       {/* SECTION 1: INTRO */}
-      <section className="py-16 md:py-24">
+      <section className="py-12 md:py-24">
         <div className="max-w-6xl mx-auto px-4 text-center">
-          <div className="mb-12 space-y-2">
-            <h1 className="text-3xl md:text-5xl font-['Playfair_Display'] text-[#D4AF37] font-medium">Destination Wedding Photographer</h1>
+          <div className="mb-8 md:mb-12 space-y-2">
+            <h1 className="text-3xl md:text-5xl font-['Playfair_Display'] text-[#D4AF37] font-medium leading-tight">Destination Wedding Photographer</h1>
             <h2 className="text-2xl md:text-4xl font-['Playfair_Display'] text-[#D4AF37]">In Thailand</h2>
             <p className="text-gray-400 text-xs md:text-sm mt-4 tracking-wide uppercase font-sans">Operating across this beautiful country</p>
           </div>
-          <div className="flex flex-col md:flex-row justify-center items-center gap-6 md:gap-8 mb-16">
+          <div className="flex flex-col md:flex-row justify-center items-center gap-6 md:gap-8 mb-12 md:mb-16">
             {Portfolio_Images.map((imgSrc, i) => {
               const isMiddle = i === 1;
               return (
@@ -198,8 +195,8 @@ const Home = () => {
               );
             })}
           </div>
-          <div className="max-w-3xl mx-auto space-y-8">
-            <p className="font-serif text-gray-500 leading-relaxed text-sm md:text-base px-4">As a dedicated team of professional photographers, we specialize in capturing the genuine essence of your most significant life moments. With over a decade of experience, we transform your precious occasions into enduring visual narratives that you'll cherish for a Forever.</p>
+          <div className="max-w-3xl mx-auto space-y-6 md:space-y-8">
+            <p className="font-serif text-gray-500 leading-relaxed text-sm md:text-base px-2 md:px-4">As a dedicated team of professional photographers, we specialize in capturing the genuine essence of your most significant life moments. With over a decade of experience, we transform your precious occasions into enduring visual narratives that you'll cherish for a Forever.</p>
             <div className="flex justify-center gap-6 text-slate-400">
               <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="hover:text-amber-400 cursor-pointer transition-colors"><path d="M22 4s-.7 2.1-2 3.4c1.6 10-9.4 17.3-18 11.6 2.2.1 4.4-.6 6-2C3 15.5.5 9.6 3 5c2.2 2.6 5.6 4.1 9 4-.9-4.2 4-6.6 7-3.8 1.1 0 3-1.2 3-1.2z" /></svg>
               <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="hover:text-amber-400 cursor-pointer transition-colors"><rect width="20" height="16" x="2" y="4" rx="2" /><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7" /></svg>
@@ -211,23 +208,27 @@ const Home = () => {
       </section>
 
       {/* SECTION 2: CAPTURED EMOTIONS */}
-      <section className="py-16 bg-[#fffaf5]">
+      <section className="py-12 md:py-16 bg-[#fffaf5]">
         <div className="max-w-6xl mx-auto px-4">
-          <div className="flex flex-col md:flex-row items-center justify-center mb-20 relative">
+          <div className="flex flex-col md:flex-row items-center justify-center mb-16 md:mb-20 relative">
             <div className="w-full md:w-[55%] h-[400px] md:h-[500px] z-0">
               <BlurImage src={LaughingWoman} alt="Bride Laughing" className="w-full h-full shadow-lg" />
             </div>
-            <div className="w-full md:w-[40%] bg-[#7a93a5] text-white p-8 md:p-12 rounded-lg shadow-xl z-10 mt-[-50px] md:mt-0 md:-ml-12">
-              <h3 className="font-serif text-2xl md:text-3xl leading-snug mb-6">“Captured <span className="text-amber-400">emotions</span>. Evocative tones.”</h3>
-              <p className="font-sans text-xs md:text-sm leading-relaxed opacity-90 mb-8">As a visual storyteller, I'm driven by documenting authentic connections. As a creative, I'm fascinated by the interplay of shadow and form. Below are some of my most cherished images illustrating genuine emotions and evocative tones from various locations.</p>
+            {/* Added relative and z-index to text box for better mobile stacking */}
+            <div className="w-[90%] md:w-[40%] bg-[#7a93a5] text-white p-8 md:p-12 rounded-lg shadow-xl z-10 mt-[-50px] md:mt-0 md:-ml-12 relative">
+              <h3 className="font-serif text-2xl md:text-3xl leading-snug mb-4 md:mb-6">“Captured <span className="text-amber-400">emotions</span>. Evocative tones.”</h3>
+              <p className="font-sans text-xs md:text-sm leading-relaxed opacity-90 mb-6 md:mb-8">As a visual storyteller, I'm driven by documenting authentic connections. As a creative, I'm fascinated by the interplay of shadow and form. Below are some of my most cherished images illustrating genuine emotions and evocative tones from various locations.</p>
               <p className="font-serif text-sm text-right opacity-80">— Guy Heart</p>
             </div>
           </div>
           <div className="text-center pt-8 border-t border-gray-200">
             <h4 className="text-[#7a93a5] uppercase tracking-widest font-serif text-sm mb-10">Featured On</h4>
-            <div className="flex flex-wrap justify-center items-center gap-8 md:gap-12 opacity-70">
+            {/* Changed from flex to grid for mobile stability */}
+            <div className="grid grid-cols-3 md:flex md:flex-wrap justify-center items-center gap-6 md:gap-12 opacity-70">
               {LOGOS.map((logo, index) => (
-                <img key={index} src={logo} alt={`Featured Logo ${index + 1}`} className="h-8 md:h-20 w-30 object-contain grayscale hover:grayscale-0 transition-all duration-300 cursor-pointer" />
+                <div key={index} className="flex justify-center">
+                  <img src={logo} alt={`Featured Logo ${index + 1}`} className="h-8 md:h-20 w-auto object-contain grayscale hover:grayscale-0 transition-all duration-300 cursor-pointer" />
+                </div>
               ))}
             </div>
           </div>
@@ -238,13 +239,14 @@ const Home = () => {
       <section className="py-16 md:py-24 bg-[#fafafa]">
         <div className="max-w-6xl mx-auto px-4">
           <div className="text-center mb-12">
-            <h2 className="text-3xl md:text-5xl font-serif text-[#D4AF37] font-medium mb-6">Our Gallery</h2>
+            <h2 className="text-3xl md:text-5xl font-['Playfair_Display'] text-[#D4AF37] font-medium mb-6">Our Gallery</h2>
             <p className="text-gray-400 text-sm md:text-base max-w-2xl mx-auto leading-relaxed font-serif">Our gallery showcases the heartfelt moments, quiet details, and genuine emotions that make every wedding unique.</p>
           </div>
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-4 mb-12">
-            <div className="md:row-span-2 h-[400px] md:h-auto group relative"><BlurImage src={gallery1} alt="Wedding Couple" className="w-full h-full group-hover:scale-102 duration-300" /></div>
-            <div className="md:col-span-2 h-[300px] group relative"><BlurImage src={gallery2} alt="Wedding Details" className="w-full h-full group-hover:scale-102 duration-300" /></div>
-            <div className="md:col-span-2 h-[300px] group relative"><BlurImage src={gallery3} alt="Traditional Wedding" className="w-full h-full group-hover:scale-102 duration-300" /></div>
+          {/* Changed grid-cols-1 to sm:grid-cols-2 */}
+          <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4 mb-12">
+            <div className="sm:col-span-2 md:col-span-1 md:row-span-2 h-[400px] md:h-auto group relative"><BlurImage src={gallery1} alt="Wedding Couple" className="w-full h-full group-hover:scale-102 duration-300" /></div>
+            <div className="sm:col-span-2 md:col-span-2 h-[300px] group relative"><BlurImage src={gallery2} alt="Wedding Details" className="w-full h-full group-hover:scale-102 duration-300" /></div>
+            <div className="sm:col-span-2 md:col-span-2 h-[300px] group relative"><BlurImage src={gallery3} alt="Traditional Wedding" className="w-full h-full group-hover:scale-102 duration-300" /></div>
             <div className="h-[300px] group relative"><BlurImage src={gallery4} alt="Gallery item" className="w-full h-full group-hover:scale-102 duration-300" /></div>
             <div className="h-[300px] group relative"><BlurImage src={gallery5} alt="Gallery item" className="w-full h-full group-hover:scale-102 duration-300" /></div>
             <div className="h-[300px] group relative"><BlurImage src={gallery6} alt="Gallery item" className="w-full h-full group-hover:scale-102 duration-300" /></div>
@@ -257,7 +259,7 @@ const Home = () => {
 
       {/* SECTION 4: SPECIAL GIFT (Existing) */}
       <section className="w-full flex flex-col md:flex-row h-auto md:h-[650px]">
-        <div className="w-full md:w-1/2 bg-[#ecf0f3] flex flex-col justify-center items-center text-center p-8 md:p-16">
+        <div className="w-full md:w-1/2 bg-[#ecf0f3] flex flex-col justify-center items-center text-center p-12 md:p-16 order-2 md:order-1">
           <h2 className="text-2xl md:text-4xl font-serif text-[#7a93a5] mb-8 leading-snug">A Special <span className="text-amber-400 font-bold">Gift</span> From Guy <br /> Heart Photography</h2>
           <div className="w-48 h-48 md:w-56 md:h-56 rounded-full overflow-hidden border-4 border-white shadow-xl mb-8 relative">
             <img src={gallery7} alt="Wedding Rings Detail" className="w-full h-full object-cover" loading="lazy" />
@@ -265,7 +267,7 @@ const Home = () => {
           <p className="text-[#8fa3b0] font-serif text-lg md:text-xl mb-10 max-w-sm leading-relaxed"><span className="text-amber-400 font-bold">FREE</span> Digital Wedding Album when you book a photo/video package</p>
           <button className="bg-[#7a93a5] text-white font-sans text-sm tracking-widest px-10 py-4 hover:bg-[#607d8b] transition-colors duration-300 shadow-md">View Full Album</button>
         </div>
-        <div className="w-full md:w-1/2 h-[400px] md:h-auto relative">
+        <div className="w-full md:w-1/2 h-[400px] md:h-auto relative order-1 md:order-2">
           <BlurImage src={gallery8} alt="Bride holding flowers" className="w-full h-full" />
         </div>
       </section>
@@ -280,9 +282,11 @@ const Home = () => {
             <h2 className="text-3xl md:text-5xl font-['Playfair_Display'] text-white font-medium tracking-wide mb-6">WHAT OUR COUPLES SAY</h2>
             <p className="text-white/80 text-xs md:text-sm font-sans max-w-2xl mx-auto leading-relaxed tracking-wider">Heartfelt stories shared by the people behind the moments we captured — a reflection of the love, trust, and memories that made their day unforgettable.</p>
           </div>
+          
+          {/* Review 1: Standard Order */}
           <div className="flex flex-col md:flex-row w-full">
-            <div className="w-full md:w-1/2 h-[500px] md:h-[650px] relative">
-              <BlurImage src={reviewImg1} alt="Happy Wedding Couple" className="w-full h-full rounded-4xl" />
+            <div className="w-full md:w-1/2 h-[400px] md:h-[650px] relative">
+              <BlurImage src={reviewImg1} alt="Happy Wedding Couple" className="w-full h-full rounded-none md:rounded-4xl" />
             </div>
             <div className="w-full md:w-1/2 flex items-center justify-center p-8 md:p-16">
               <div className="bg-white p-8 md:p-12 rounded-lg shadow-2xl max-w-md relative">
@@ -298,8 +302,10 @@ const Home = () => {
               </div>
             </div>
           </div>
-          {/* Split Content: Image Right, Card Left */}
-          <div className="flex flex-col md:flex-row w-full">
+
+          {/* Review 2: Split Content: Image Right, Card Left */}
+          {/* Changed to flex-col-reverse so Image is on Top on Mobile */}
+          <div className="flex flex-col-reverse md:flex-row w-full">
             <div className="w-full md:w-1/2 flex items-center justify-center p-8 md:p-16">
               <div className="bg-white p-8 md:p-12 rounded-lg shadow-2xl max-w-md relative">
                 <h3 className="text-amber-400 font-['Playfair_Display'] text-xl md:text-2xl leading-relaxed mb-6">“Guy Heart Photography Team was absolutely terrific. They are an incredibly talented photography team.”</h3>
@@ -313,21 +319,21 @@ const Home = () => {
                 </div>
               </div>
             </div>
-            <div className="w-full md:w-1/2 h-[500px] md:h-[650px] relative">
-              <BlurImage src={reviewImg2} alt="Happy Wedding Couple" className="w-full h-full rounded-4xl" />
+            <div className="w-full md:w-1/2 h-[400px] md:h-[650px] relative">
+              <BlurImage src={reviewImg2} alt="Happy Wedding Couple" className="w-full h-full rounded-none md:rounded-4xl" />
             </div>
           </div>
         </div>
       </section>
 
       {/* SECTION 7: GRID REVIEWS (Existing) */}
-      <section className="bg-[#ecf0f3] py-20">
+      <section className="bg-[#ecf0f3] py-16 md:py-20">
         <div className="max-w-6xl mx-auto px-4">
-          <div className="text-center mb-24">
-            <h3 className="text-[#7a93a5] font-serif text-2xl md:text-3xl uppercase tracking-widest mb-2">WHAT OTHER COUPLES</h3>
-            <h2 className="text-amber-400 font-serif text-3xl md:text-5xl font-bold">LOVED MOST ABOUT US?</h2>
+          <div className="text-center mb-12 md:mb-24">
+            <h3 className="text-[#7a93a5] font-serif text-xl md:text-3xl uppercase tracking-widest mb-2">WHAT OTHER COUPLES</h3>
+            <h2 className="text-amber-400 font-serif text-2xl md:text-5xl font-bold">LOVED MOST ABOUT US?</h2>
           </div>
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-8 gap-y-20">
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-8 gap-y-12 md:gap-y-20">
             {GRID_REVIEWS.map((review) => (
               <ReviewCard
                 key={review.id}
@@ -344,14 +350,15 @@ const Home = () => {
       {/* =========================================
           NEW SECTION: STATS
       ========================================= */}
-      <section className="py-20 bg-white">
+      <section className="py-12 md:py-20 bg-white">
         <div className="max-w-6xl mx-auto px-4">
-          <div className="text-center mb-16">
+          <div className="text-center mb-12 md:mb-16">
             <h2 className="text-3xl md:text-5xl font-['Playfair_Display'] text-amber-400 font-medium leading-tight">
-              Helping Couples Bring to Life Their <br /> Wedding Dream
+              Helping Couples Bring to Life Their <br className="hidden md:block" /> Wedding Dream
             </h2>
           </div>
-          <div className="grid grid-cols-2 md:grid-cols-4 gap-8 text-center">
+          {/* Stats look good in 2 columns on mobile */}
+          <div className="grid grid-cols-2 md:grid-cols-4 gap-8 md:gap-8 text-center">
             {STATS_DATA.map((stat, index) => (
               <div key={index} className="flex flex-col items-center">
                 <span className="font-['Playfair_Display'] text-4xl md:text-5xl text-[#7a93a5] font-bold mb-2">{stat.number}</span>
@@ -367,20 +374,19 @@ const Home = () => {
       ========================================= */}
       <section className="py-16 md:py-24 bg-[#ecf0f3]">
         <div className="max-w-4xl mx-auto px-4">
-          <div className="text-center mb-16">
+          <div className="text-center mb-12 md:mb-16">
             <h2 className="text-3xl md:text-5xl font-['Playfair_Display'] text-amber-400 font-medium">FAQs</h2>
           </div>
-          <div className="bg-white rounded-lg shadow-lg p-8 md:p-12">
+          <div className="bg-white rounded-lg shadow-lg p-6 md:p-12">
             {FAQ_DATA.map((item, index) => (
               <FAQItem key={index} question={item.question} answer={item.answer} />
             ))}
           </div>
         </div>
-      </section> 
+      </section>
 
       {/* =========================================
           NEW SECTION: "A MOMENT TO REMEMBER" GALLERY
-          (Based on image_1.png)
       ========================================= */}
       <section className="py-16 md:py-24 bg-[#fffaf5]">
         <div className="max-w-6xl mx-auto px-4 text-center">
@@ -390,8 +396,8 @@ const Home = () => {
             <p className="text-gray-500 text-sm md:text-base max-w-3xl mx-auto leading-relaxed font-serif">Your special day is more than a celebration—it’s a memory you’ll cherish forever. We capture every heartfelt moment so you can relive the joy again and again.</p>
           </div>
 
-          {/* 3x3 Grid */}
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-4 mb-12">
+          {/* 3x3 Grid -> Adapted to 1 or 2 columns on mobile */}
+          <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4 mb-12">
             {MOMENT_GALLERY_IMAGES.map((img, index) => (
               <div key={index} className="h-[300px] group relative">
                 <BlurImage src={img} alt={`Gallery Moment ${index + 1}`} className="w-full h-full group-hover:scale-102 duration-300" />
@@ -405,7 +411,7 @@ const Home = () => {
           </div>
         </div>
       </section>
-     
+      
      <ContactSection/>
 
     </main>
