@@ -1,5 +1,5 @@
 import React from 'react';
-import BannerVid from '../assets/VIdeos/guyheartvd.mp4'
+import BannerVid from '../assets/VIdeos/GHwithout outro.mp4'
 
 const HeroVideoBanner = () => {
   // Static content configuration

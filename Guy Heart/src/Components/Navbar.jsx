@@ -19,7 +19,6 @@ const Navbar = () => {
   // useNavigate hook for programmatic navigation
   const navigate = useNavigate();
   
-  // useLocation is still needed here to check the current URL for the transparency effect
   const location = useLocation();
   const isHomePage = location.pathname === '/';
   
@@ -122,7 +121,7 @@ const Navbar = () => {
 
       {/* --- SPACER FIX --- */}
       {!isHomePage && (
-        <div className="w-full h-[120px] md:h-[160px] bg-white"></div>
+        <div className="w-full h-[120px] md:h-[120px] bg-white"></div>
       )}
     </>
   );
