@@ -117,6 +117,331 @@ export const blogData = [
       }
     ]
   },
+  
+  // --- POST 5 ---
+  {
+    id: 5,
+    title: "Capturing Candid Moments: The Art of Invisibility",
+    category: "Style",
+    date: "September 05, 2025",
+    coverImage: "https://images.unsplash.com/photo-1606800052052-a08af7148866?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80",
+    excerpt: "The best photos are often the ones you didn't know were being taken. Here is how we blend into the background.",
+    tags: ["Style", "Candid", "Emotion"],
+    contentSections: [
+      {
+        subtitle: "Using Long Lenses",
+        text: "To remain unobtrusive, we often use telephoto lenses (85mm or 70-200mm). This allows us to stand far back while still getting an intimate close-up. The result is a subject that is relaxed and unaware of the camera.",
+        image: "https://images.unsplash.com/photo-1511285560982-1351cdeb9821?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80"
+      },
+      {
+        subtitle: "Anticipating the Laugh",
+        text: "Candid photography is 90% anticipation. We watch the conversation flow and wait for the punchline. By the time the laughter erupts, our shutter is already clicking. It's about feeling the room rather than directing it.",
+        image: "https://images.unsplash.com/photo-1515934751635-c81c6bc9a2d8?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80"
+      },
+      {
+        subtitle: "The In-Between Moments",
+        text: "The formal pose is nice, but the moment right *after* the pose—when the couple relaxes and looks at each other—is real. We keep shooting even when the 'official' shot is done.",
+        image: "https://images.unsplash.com/photo-1520854221256-17451cc330e7?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80"
+      }
+    ]
+  },
+  // --- POST 6 ---
+  {
+    id: 6,
+    title: "Capturing Candid Moments: The Art of Invisibility",
+    category: "Style",
+    date: "September 05, 2025",
+    coverImage: "https://images.unsplash.com/photo-1606800052052-a08af7148866?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80",
+    excerpt: "The best photos are often the ones you didn't know were being taken. Here is how we blend into the background.",
+    tags: ["Style", "Candid", "Emotion"],
+    contentSections: [
+      {
+        subtitle: "Using Long Lenses",
+        text: "To remain unobtrusive, we often use telephoto lenses (85mm or 70-200mm). This allows us to stand far back while still getting an intimate close-up. The result is a subject that is relaxed and unaware of the camera.",
+        image: "https://images.unsplash.com/photo-1511285560982-1351cdeb9821?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80"
+      },
+      {
+        subtitle: "Anticipating the Laugh",
+        text: "Candid photography is 90% anticipation. We watch the conversation flow and wait for the punchline. By the time the laughter erupts, our shutter is already clicking. It's about feeling the room rather than directing it.",
+        image: "https://images.unsplash.com/photo-1515934751635-c81c6bc9a2d8?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80"
+      },
+      {
+        subtitle: "The In-Between Moments",
+        text: "The formal pose is nice, but the moment right *after* the pose—when the couple relaxes and looks at each other—is real. We keep shooting even when the 'official' shot is done.",
+        image: "https://images.unsplash.com/photo-1520854221256-17451cc330e7?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80"
+      }
+    ]
+  },
+  // --- POST 7 ---
+  {
+    id: 7,
+    title: "Capturing Candid Moments: The Art of Invisibility",
+    category: "Style",
+    date: "September 05, 2025",
+    coverImage: "https://images.unsplash.com/photo-1606800052052-a08af7148866?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80",
+    excerpt: "The best photos are often the ones you didn't know were being taken. Here is how we blend into the background.",
+    tags: ["Style", "Candid", "Emotion"],
+    contentSections: [
+      {
+        subtitle: "Using Long Lenses",
+        text: "To remain unobtrusive, we often use telephoto lenses (85mm or 70-200mm). This allows us to stand far back while still getting an intimate close-up. The result is a subject that is relaxed and unaware of the camera.",
+        image: "https://images.unsplash.com/photo-1511285560982-1351cdeb9821?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80"
+      },
+      {
+        subtitle: "Anticipating the Laugh",
+        text: "Candid photography is 90% anticipation. We watch the conversation flow and wait for the punchline. By the time the laughter erupts, our shutter is already clicking. It's about feeling the room rather than directing it.",
+        image: "https://images.unsplash.com/photo-1515934751635-c81c6bc9a2d8?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80"
+      },
+      {
+        subtitle: "The In-Between Moments",
+        text: "The formal pose is nice, but the moment right *after* the pose—when the couple relaxes and looks at each other—is real. We keep shooting even when the 'official' shot is done.",
+        image: "https://images.unsplash.com/photo-1520854221256-17451cc330e7?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80"
+      }
+    ]
+  },
+  // --- POST 8 ---
+  {
+    id: 8,
+    title: "Capturing Candid Moments: The Art of Invisibility",
+    category: "Style",
+    date: "September 05, 2025",
+    coverImage: "https://images.unsplash.com/photo-1606800052052-a08af7148866?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80",
+    excerpt: "The best photos are often the ones you didn't know were being taken. Here is how we blend into the background.",
+    tags: ["Style", "Candid", "Emotion"],
+    contentSections: [
+      {
+        subtitle: "Using Long Lenses",
+        text: "To remain unobtrusive, we often use telephoto lenses (85mm or 70-200mm). This allows us to stand far back while still getting an intimate close-up. The result is a subject that is relaxed and unaware of the camera.",
+        image: "https://images.unsplash.com/photo-1511285560982-1351cdeb9821?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80"
+      },
+      {
+        subtitle: "Anticipating the Laugh",
+        text: "Candid photography is 90% anticipation. We watch the conversation flow and wait for the punchline. By the time the laughter erupts, our shutter is already clicking. It's about feeling the room rather than directing it.",
+        image: "https://images.unsplash.com/photo-1515934751635-c81c6bc9a2d8?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80"
+      },
+      {
+        subtitle: "The In-Between Moments",
+        text: "The formal pose is nice, but the moment right *after* the pose—when the couple relaxes and looks at each other—is real. We keep shooting even when the 'official' shot is done.",
+        image: "https://images.unsplash.com/photo-1520854221256-17451cc330e7?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80"
+      }
+    ]
+  },
+  // --- POST 9 ---
+  {
+    id: 9,
+    title: "Capturing Candid Moments: The Art of Invisibility",
+    category: "Style",
+    date: "September 05, 2025",
+    coverImage: "https://images.unsplash.com/photo-1606800052052-a08af7148866?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80",
+    excerpt: "The best photos are often the ones you didn't know were being taken. Here is how we blend into the background.",
+    tags: ["Style", "Candid", "Emotion"],
+    contentSections: [
+      {
+        subtitle: "Using Long Lenses",
+        text: "To remain unobtrusive, we often use telephoto lenses (85mm or 70-200mm). This allows us to stand far back while still getting an intimate close-up. The result is a subject that is relaxed and unaware of the camera.",
+        image: "https://images.unsplash.com/photo-1511285560982-1351cdeb9821?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80"
+      },
+      {
+        subtitle: "Anticipating the Laugh",
+        text: "Candid photography is 90% anticipation. We watch the conversation flow and wait for the punchline. By the time the laughter erupts, our shutter is already clicking. It's about feeling the room rather than directing it.",
+        image: "https://images.unsplash.com/photo-1515934751635-c81c6bc9a2d8?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80"
+      },
+      {
+        subtitle: "The In-Between Moments",
+        text: "The formal pose is nice, but the moment right *after* the pose—when the couple relaxes and looks at each other—is real. We keep shooting even when the 'official' shot is done.",
+        image: "https://images.unsplash.com/photo-1520854221256-17451cc330e7?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80"
+      }
+    ]
+  },
+  // --- POST 10 ---
+  {
+    id: 10,
+    title: "Capturing Candid Moments: The Art of Invisibility",
+    category: "Style",
+    date: "September 05, 2025",
+    coverImage: "https://images.unsplash.com/photo-1606800052052-a08af7148866?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80",
+    excerpt: "The best photos are often the ones you didn't know were being taken. Here is how we blend into the background.",
+    tags: ["Style", "Candid", "Emotion"],
+    contentSections: [
+      {
+        subtitle: "Using Long Lenses",
+        text: "To remain unobtrusive, we often use telephoto lenses (85mm or 70-200mm). This allows us to stand far back while still getting an intimate close-up. The result is a subject that is relaxed and unaware of the camera.",
+        image: "https://images.unsplash.com/photo-1511285560982-1351cdeb9821?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80"
+      },
+      {
+        subtitle: "Anticipating the Laugh",
+        text: "Candid photography is 90% anticipation. We watch the conversation flow and wait for the punchline. By the time the laughter erupts, our shutter is already clicking. It's about feeling the room rather than directing it.",
+        image: "https://images.unsplash.com/photo-1515934751635-c81c6bc9a2d8?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80"
+      },
+      {
+        subtitle: "The In-Between Moments",
+        text: "The formal pose is nice, but the moment right *after* the pose—when the couple relaxes and looks at each other—is real. We keep shooting even when the 'official' shot is done.",
+        image: "https://images.unsplash.com/photo-1520854221256-17451cc330e7?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80"
+      }
+    ]
+  },
+  // --- POST 11 ---
+  {
+    id: 11,
+    title: "Capturing Candid Moments: The Art of Invisibility",
+    category: "Style",
+    date: "September 05, 2025",
+    coverImage: "https://images.unsplash.com/photo-1606800052052-a08af7148866?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80",
+    excerpt: "The best photos are often the ones you didn't know were being taken. Here is how we blend into the background.",
+    tags: ["Style", "Candid", "Emotion"],
+    contentSections: [
+      {
+        subtitle: "Using Long Lenses",
+        text: "To remain unobtrusive, we often use telephoto lenses (85mm or 70-200mm). This allows us to stand far back while still getting an intimate close-up. The result is a subject that is relaxed and unaware of the camera.",
+        image: "https://images.unsplash.com/photo-1511285560982-1351cdeb9821?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80"
+      },
+      {
+        subtitle: "Anticipating the Laugh",
+        text: "Candid photography is 90% anticipation. We watch the conversation flow and wait for the punchline. By the time the laughter erupts, our shutter is already clicking. It's about feeling the room rather than directing it.",
+        image: "https://images.unsplash.com/photo-1515934751635-c81c6bc9a2d8?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80"
+      },
+      {
+        subtitle: "The In-Between Moments",
+        text: "The formal pose is nice, but the moment right *after* the pose—when the couple relaxes and looks at each other—is real. We keep shooting even when the 'official' shot is done.",
+        image: "https://images.unsplash.com/photo-1520854221256-17451cc330e7?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80"
+      }
+    ]
+  },
+  // --- POST 12 ---
+  {
+    id: 12,
+    title: "Capturing Candid Moments: The Art of Invisibility",
+    category: "Style",
+    date: "September 05, 2025",
+    coverImage: "https://images.unsplash.com/photo-1606800052052-a08af7148866?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80",
+    excerpt: "The best photos are often the ones you didn't know were being taken. Here is how we blend into the background.",
+    tags: ["Style", "Candid", "Emotion"],
+    contentSections: [
+      {
+        subtitle: "Using Long Lenses",
+        text: "To remain unobtrusive, we often use telephoto lenses (85mm or 70-200mm). This allows us to stand far back while still getting an intimate close-up. The result is a subject that is relaxed and unaware of the camera.",
+        image: "https://images.unsplash.com/photo-1511285560982-1351cdeb9821?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80"
+      },
+      {
+        subtitle: "Anticipating the Laugh",
+        text: "Candid photography is 90% anticipation. We watch the conversation flow and wait for the punchline. By the time the laughter erupts, our shutter is already clicking. It's about feeling the room rather than directing it.",
+        image: "https://images.unsplash.com/photo-1515934751635-c81c6bc9a2d8?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80"
+      },
+      {
+        subtitle: "The In-Between Moments",
+        text: "The formal pose is nice, but the moment right *after* the pose—when the couple relaxes and looks at each other—is real. We keep shooting even when the 'official' shot is done.",
+        image: "https://images.unsplash.com/photo-1520854221256-17451cc330e7?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80"
+      }
+    ]
+  },
+  // --- POST 13 ---
+  {
+    id: 13,
+    title: "Capturing Candid Moments: The Art of Invisibility",
+    category: "Style",
+    date: "September 05, 2025",
+    coverImage: "https://images.unsplash.com/photo-1606800052052-a08af7148866?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80",
+    excerpt: "The best photos are often the ones you didn't know were being taken. Here is how we blend into the background.",
+    tags: ["Style", "Candid", "Emotion"],
+    contentSections: [
+      {
+        subtitle: "Using Long Lenses",
+        text: "To remain unobtrusive, we often use telephoto lenses (85mm or 70-200mm). This allows us to stand far back while still getting an intimate close-up. The result is a subject that is relaxed and unaware of the camera.",
+        image: "https://images.unsplash.com/photo-1511285560982-1351cdeb9821?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80"
+      },
+      {
+        subtitle: "Anticipating the Laugh",
+        text: "Candid photography is 90% anticipation. We watch the conversation flow and wait for the punchline. By the time the laughter erupts, our shutter is already clicking. It's about feeling the room rather than directing it.",
+        image: "https://images.unsplash.com/photo-1515934751635-c81c6bc9a2d8?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80"
+      },
+      {
+        subtitle: "The In-Between Moments",
+        text: "The formal pose is nice, but the moment right *after* the pose—when the couple relaxes and looks at each other—is real. We keep shooting even when the 'official' shot is done.",
+        image: "https://images.unsplash.com/photo-1520854221256-17451cc330e7?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80"
+      }
+    ]
+  },
+  // --- POST 14 ---
+  {
+    id: 14,
+    title: "Capturing Candid Moments: The Art of Invisibility",
+    category: "Style",
+    date: "September 05, 2025",
+    coverImage: "https://images.unsplash.com/photo-1606800052052-a08af7148866?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80",
+    excerpt: "The best photos are often the ones you didn't know were being taken. Here is how we blend into the background.",
+    tags: ["Style", "Candid", "Emotion"],
+    contentSections: [
+      {
+        subtitle: "Using Long Lenses",
+        text: "To remain unobtrusive, we often use telephoto lenses (85mm or 70-200mm). This allows us to stand far back while still getting an intimate close-up. The result is a subject that is relaxed and unaware of the camera.",
+        image: "https://images.unsplash.com/photo-1511285560982-1351cdeb9821?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80"
+      },
+      {
+        subtitle: "Anticipating the Laugh",
+        text: "Candid photography is 90% anticipation. We watch the conversation flow and wait for the punchline. By the time the laughter erupts, our shutter is already clicking. It's about feeling the room rather than directing it.",
+        image: "https://images.unsplash.com/photo-1515934751635-c81c6bc9a2d8?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80"
+      },
+      {
+        subtitle: "The In-Between Moments",
+        text: "The formal pose is nice, but the moment right *after* the pose—when the couple relaxes and looks at each other—is real. We keep shooting even when the 'official' shot is done.",
+        image: "https://images.unsplash.com/photo-1520854221256-17451cc330e7?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80"
+      }
+    ]
+  },
+  // --- POST 15 ---
+  {
+    id: 15,
+    title: "Capturing Candid Moments: The Art of Invisibility",
+    category: "Style",
+    date: "September 05, 2025",
+    coverImage: "https://images.unsplash.com/photo-1606800052052-a08af7148866?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80",
+    excerpt: "The best photos are often the ones you didn't know were being taken. Here is how we blend into the background.",
+    tags: ["Style", "Candid", "Emotion"],
+    contentSections: [
+      {
+        subtitle: "Using Long Lenses",
+        text: "To remain unobtrusive, we often use telephoto lenses (85mm or 70-200mm). This allows us to stand far back while still getting an intimate close-up. The result is a subject that is relaxed and unaware of the camera.",
+        image: "https://images.unsplash.com/photo-1511285560982-1351cdeb9821?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80"
+      },
+      {
+        subtitle: "Anticipating the Laugh",
+        text: "Candid photography is 90% anticipation. We watch the conversation flow and wait for the punchline. By the time the laughter erupts, our shutter is already clicking. It's about feeling the room rather than directing it.",
+        image: "https://images.unsplash.com/photo-1515934751635-c81c6bc9a2d8?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80"
+      },
+      {
+        subtitle: "The In-Between Moments",
+        text: "The formal pose is nice, but the moment right *after* the pose—when the couple relaxes and looks at each other—is real. We keep shooting even when the 'official' shot is done.",
+        image: "https://images.unsplash.com/photo-1520854221256-17451cc330e7?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80"
+      }
+    ]
+  },
+  // --- POST 16 ---
+  {
+    id: 16,
+    title: "Capturing Candid Moments: The Art of Invisibility",
+    category: "Style",
+    date: "September 05, 2025",
+    coverImage: "https://images.unsplash.com/photo-1606800052052-a08af7148866?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80",
+    excerpt: "The best photos are often the ones you didn't know were being taken. Here is how we blend into the background.",
+    tags: ["Style", "Candid", "Emotion"],
+    contentSections: [
+      {
+        subtitle: "Using Long Lenses",
+        text: "To remain unobtrusive, we often use telephoto lenses (85mm or 70-200mm). This allows us to stand far back while still getting an intimate close-up. The result is a subject that is relaxed and unaware of the camera.",
+        image: "https://images.unsplash.com/photo-1511285560982-1351cdeb9821?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80"
+      },
+      {
+        subtitle: "Anticipating the Laugh",
+        text: "Candid photography is 90% anticipation. We watch the conversation flow and wait for the punchline. By the time the laughter erupts, our shutter is already clicking. It's about feeling the room rather than directing it.",
+        image: "https://images.unsplash.com/photo-1515934751635-c81c6bc9a2d8?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80"
+      },
+      {
+        subtitle: "The In-Between Moments",
+        text: "The formal pose is nice, but the moment right *after* the pose—when the couple relaxes and looks at each other—is real. We keep shooting even when the 'official' shot is done.",
+        image: "https://images.unsplash.com/photo-1520854221256-17451cc330e7?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80"
+      }
+    ]
+  },
 
   // ... (I will continue adding objects here up to 16 posts) ...
 ];
