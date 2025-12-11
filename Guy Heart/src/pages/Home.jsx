@@ -1,15 +1,18 @@
-import React, { useState } from 'react';
-import { motion } from 'framer-motion';
-import { Link } from 'react-router-dom'; // 1. IMPORT LINK
+import React, { useState, useRef } from 'react'; 
+import { motion, useInView } from 'framer-motion'; 
+import { Link } from 'react-router-dom';
 import Heroslider from '../Components/Heroslider';
 import ServicesSlider from '../Components/ServicesSlider';
 import ReviewCard from '../Components/ReviewCard';
 import ContactSection from '../Components/Contact';
+import BounceCards from '../Components/BounceCard';
 
 // --- IMAGES ---
 import portfolioImg1 from '../assets/Images/Selected Final High Res Guy Heart/Couple 2/51.webp';
 import portfolioImg2 from '../assets/Images/Selected Final High Res Guy Heart/Couple 3/36.webp';
 import portfolioImg3 from '../assets/Images/Selected Final High Res Guy Heart/Couple 5/4.webp';
+import portfolioImg4 from '../assets/Images/Selected Final High Res Guy Heart/Couple 3/3.webp';
+import portfolioImg5 from '../assets/Images/Selected Final High Res Guy Heart/Couple 5/12.webp';
 
 import LaughingWoman from '../assets/Laughing Woman.jpeg';
 
@@ -43,6 +46,17 @@ const MOMENT_GALLERY_IMAGES = [
   gallery1, gallery2, gallery3,
   gallery4, gallery5, gallery6,
   gallery7, gallery8, gallery1
+];
+
+//For BounceCards 
+const images = [portfolioImg1, portfolioImg2, portfolioImg3, portfolioImg4, portfolioImg5];
+
+const transformStyles = [
+  "rotate(5deg) translate(-150px)",
+  "rotate(0deg) translate(-70px)",
+  "rotate(-5deg)",
+  "rotate(5deg) translate(70px)",
+  "rotate(-5deg) translate(150px)"
 ];
 
 // --- NEW DATA: FAQs ---
@@ -181,6 +195,11 @@ const FAQItem = ({ question, answer }) => {
 
 const Home = () => {
 
+
+  const bounceCardRef = useRef(null);
+
+  const isBounceCardInView = useInView(bounceCardRef, { once: true, margin: "-200px" });
+
   // --- ANIMATION VARIANTS ---
   const fadeInUp = {
     hidden: { opacity: 0, y: 40 },
@@ -230,20 +249,28 @@ const Home = () => {
             <p className="text-gray-400 text-xs md:text-sm mt-4 tracking-wide uppercase font-sans">Operating across this beautiful country</p>
           </motion.div>
 
-          {/* Animated Images (Staggered) */}
-          <motion.div 
-            initial="hidden" whileInView="visible" viewport={{ once: true }} variants={staggerContainer}
-            className="flex flex-col md:flex-row justify-center items-center gap-6 md:gap-8 mb-12 md:mb-16"
-          >
-            {Portfolio_Images.map((imgSrc, i) => {
-              const isMiddle = i === 1;
-              return (
-                <motion.div variants={fadeInUp} key={i} className={`relative shadow-lg ${isMiddle ? 'w-full md:w-[400px] h-[350px] md:h-[480px]' : 'w-full md:w-[300px] h-[300px] md:h-[380px]'}`}>
-                  <BlurImage src={imgSrc} alt={`Portfolio Collection ${i + 1}`} className="w-full h-full hover:scale-[1.02] transition-transform duration-500" />
-                </motion.div>
-              );
-            })}
-          </motion.div>
+          {/* BOUNCE CARD SECTION - NOW TRIGGERED ON SCROLL */}
+          <div className="pb-10">
+            <div 
+              ref={bounceCardRef} 
+              className="w-full flex justify-center items-center mt-10 min-h-[250px]"
+            >
+              {isBounceCardInView && (
+                <BounceCards
+                  className="custom-bounceCards mb-2"
+                  images={images}
+                  containerWidth={500}
+                  containerHeight={250}
+                  animationDelay={1}
+                  animationStagger={0.3}
+                  easeType="elastic.out(1, 0.5)"
+                  transformStyles={transformStyles}
+                  enableHover={true}
+                />
+              )}
+            </div>
+          </div>
+
 
           {/* Animated Text Block */}
           <motion.div 
