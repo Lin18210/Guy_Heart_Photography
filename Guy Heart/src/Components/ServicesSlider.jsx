@@ -1,17 +1,14 @@
 import React, { useState, useEffect } from 'react';
-<<<<<<< HEAD
 import gallery1 from '../assets/Images/Compressed GH/GH/13.webp';
 import gallery2 from '../assets/Images/Compressed GH/GH/15.webp';
 import gallery3 from '../assets/Images/Compressed GH/GH/20.webp';
 import gallery4 from '../assets/Images/Compressed GH/GH/pexels-jonathanborba-12031176.webp';
 import gallery6 from '../assets/Images/Compressed GH/GH/Guy Lev Or-136.webp';
-=======
 import gallery1 from '../assets/All/Picflow Images Dec 11/an-indian-wedding-is-nothing-short-of-an-extravaga-2025-04-05-21-38-07-utc.webp';
 import gallery2 from '../assets/All/Picflow Images Dec 11/couple-of-bride-and-groom-enjoying-romantic-moment-2024-12-22-23-18-19-utc.webp';
 import gallery3 from '../assets/All/Picflow Images Dec 11/young-couple-the-bride-and-groom-walking-along-a-2025-11-24-17-21-49-utc.webp';
 import gallery4 from '../assets/All/Picflow Images Dec 11/young-caucasian-couple-39-s-wedding-day-2025-02-10-00-40-43-utc.webp';
 import gallery6 from '../assets/All/Picflow Images Dec 11/white-yacht-with-sail-set-goes-along-the-island-on-2025-01-10-20-40-33-utc.webp';
->>>>>>> 9bf898c6437aba7603526bb012fa8d89c59c6782
 
 
 const SERVICES_DATA = [
