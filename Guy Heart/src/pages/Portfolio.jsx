@@ -1,8 +1,7 @@
 import React, { useState, useEffect } from 'react'
 import Masonry from '../Components/Masonry'
 
-<<<<<<< HEAD
-// --- Importing ALL 105 Images from Compressed GH/GH ---
+
 import img1 from '../assets/Images/Compressed GH/GH/1.webp';
 import img2 from '../assets/Images/Compressed GH/GH/12.webp';
 import img3 from '../assets/Images/Compressed GH/GH/120922_0225.webp';
@@ -108,7 +107,6 @@ import img102 from '../assets/Images/Compressed GH/GH/pexels-wolrider-32632283.w
 import img103 from '../assets/Images/Compressed GH/GH/pexels-zeynep-sahin-2148331322-31937781.webp';
 import img104 from '../assets/Images/Compressed GH/GH/wedding-couple-is-hugging-on-a-yacht-2024-09-16-10-31-22-utc.webp';
 import img105 from '../assets/Images/Compressed GH/GH/wedding-couple-is-hugging-on-a-yacht-beauty-bride-2025-01-10-20-40-43-utc.webp';
-=======
 // --- Importing ALL 87 Picflow Images ---
 import img1 from '../assets/All/Picflow Images Dec 11/Copy of welcome-to-wedding-sign-and-reception-table-2024-12-22-23-18-38-utc.webp';
 import img2 from '../assets/All/Picflow Images Dec 11/a-special-day-brings-out-the-best-smiles-2025-04-06-09-01-03-utc.webp';
@@ -197,7 +195,6 @@ import img84 from '../assets/All/Picflow Images Dec 11/young-couple-the-bride-an
 import img85 from '../assets/All/Picflow Images Dec 11/young-couple-the-bride-and-groom-walking-along-a-2025-11-11-20-46-12-utc1.webp';
 import img86 from '../assets/All/Picflow Images Dec 11/young-couple-the-bride-and-groom-walking-along-a-2025-11-11-20-46-12-utc.webp';
 import img87 from '../assets/All/Picflow Images Dec 11/young-couple-the-bride-and-groom-walking-along-a-2025-11-24-17-21-49-utc.webp';
->>>>>>> 9bf898c6437aba7603526bb012fa8d89c59c6782
 
 
 // --- Array of All Imported Images ---
@@ -210,13 +207,9 @@ const rawItems = [
     img51, img52, img53, img54, img55, img56, img57, img58, img59, img60,
     img61, img62, img63, img64, img65, img66, img67, img68, img69, img70,
     img71, img72, img73, img74, img75, img76, img77, img78, img79, img80,
-<<<<<<< HEAD
     img81, img82, img83, img84, img85, img86, img87, img88, img89, img90,
     img91, img92, img93, img94, img95, img96, img97, img98, img99, img100,
     img101, img102, img103, img104, img105
-=======
-    img81, img82, img83, img84, img85, img86, img87
->>>>>>> 9bf898c6437aba7603526bb012fa8d89c59c6782
 ];
 
 // --- Helper to assign random heights ---
