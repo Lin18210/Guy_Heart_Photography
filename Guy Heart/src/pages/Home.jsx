@@ -8,11 +8,7 @@ import ContactSection from '../Components/Contact';
 import BounceCards from '../Components/BounceCard';
 
 // --- IMAGES ---
-import portfolioImg1 from '../assets/Images/Compressed GH/GH/pexels-jonathanborba-11994907.webp';
-import portfolioImg2 from '../assets/Images/Compressed GH/GH/cheerful-newlyweds-at-beach-wedding-ceremony-2025-02-10-00-14-59-utc.webp';
-import portfolioImg3 from '../assets/Images/Compressed GH/GH/pexels-jin-wedding-3859587-5729187.webp';
-import portfolioImg4 from '../assets/Images/Compressed GH/GH/pexels-jonathanborba-12031176.webp';
-import portfolioImg5 from '../assets/Images/Compressed GH/GH/pexels-san-wedding-1649543-5544650.webp';
+// --- IMAGES ---
 import portfolioImg1 from '../assets/All/Picflow Images Dec 11/blonde-bride-in-a-tight-wedding-dress-in-a-studio-2025-11-11-20-33-08-utc.webp';
 import portfolioImg2 from '../assets/All/Picflow Images Dec 11/cheerful-newlyweds-at-beach-wedding-ceremnoy-2025-02-10-00-04-40-utc.webp';
 import portfolioImg3 from '../assets/All/Picflow Images Dec 11/couple-of-bride-and-groom-enjoying-romantic-moment-2024-12-22-23-18-08-utc.webp';
@@ -22,14 +18,6 @@ import portfolioImg5 from '../assets/All/Picflow Images Dec 11/bride-in-elegant-
 import LaughingWoman from '../assets/All/Picflow Images Dec 11/Laughing.jpeg';
 
 // Gallery images
-import gallery1 from '../assets/Images/Compressed GH/GH/pexels-jin-wedding-3859587-5729206.webp';
-import gallery2 from '../assets/Images/Compressed GH/GH/pexels-jonathanborba-13110257.webp';
-import gallery3 from '../assets/Images/Compressed GH/GH/pexels-tr-n-long-3093985-13112044.webp';
-import gallery4 from '../assets/Images/Compressed GH/GH/Guy Lev Or-137.webp';
-import gallery5 from '../assets/Images/Compressed GH/GH/pexels-tr-n-long-3093985-5984181.webp';
-import gallery6 from '../assets/Images/Compressed GH/GH/pexels-masoodaslami-29624006.webp';
-import gallery7 from '../assets/Images/Compressed GH/GH/pexels-simeart-30311767.webp';
-import gallery8 from '../assets/Images/Compressed GH/GH/pexels-wellington-tavares-1593705508-27552391.webp';
 import gallery1 from '../assets/All/Picflow Images Dec 11/cutting-the-wedding-cake-against-the-backdrop-of-w-2025-11-11-20-46-12-utc.webp';
 import gallery2 from '../assets/All/Picflow Images Dec 11/young-caucasian-couple-39-s-wedding-day-2025-02-10-00-08-00-utc.webp';
 import gallery3 from '../assets/All/Picflow Images Dec 11/groom-kissing-beautiful-bride-s-hand-2024-12-22-23-18-28-utc.webp';
