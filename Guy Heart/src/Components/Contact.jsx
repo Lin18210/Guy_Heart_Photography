@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 
 // Placeholder image (Replace with your actual import path)
-import contactImage from '../assets/Images/Selected Final High Res Guy Heart/Couple 5/40.webp'; 
+import contactImage from '../assets/All/Picflow Images Dec 11/bride-in-elegant-wedding-dress-2024-12-22-23-18-24-utc.webp'; 
 
 const ContactSection = () => {
   // --- STATE MANAGEMENT ---

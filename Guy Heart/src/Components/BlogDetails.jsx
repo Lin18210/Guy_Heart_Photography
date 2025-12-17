@@ -119,11 +119,7 @@ const BlogDetail = () => {
                     </span>
                 ))}
             </div>
-             <div className="mt-16">
-                 <Link to="/contact" className="inline-block border border-[#7a93a5] text-[#7a93a5] px-12 py-4 font-sans text-sm tracking-widest hover:bg-[#7a93a5] hover:text-white transition-colors duration-300">
-                    BOOK YOUR SESSION
-                 </Link>
-            </div>
+             
         </div>
 
       </div>

@@ -1,9 +1,7 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
-import { FaInstagram, FaFacebook, FaTiktok, FaEnvelope, FaWhatsapp, FaPhone } from 'react-icons/fa'
+import { FaInstagram, FaFacebook, FaTiktok, FaEnvelope, FaWhatsapp, FaPhone, FaYoutube, FaLine } from 'react-icons/fa'
 import Logo from '../assets/Logo.png'
-
-
 
 const Footer = () => {
 return (
@@ -25,8 +23,8 @@ return (
             <div className="space-y-3 text-sm">
               <div className="flex items-center gap-3">
                 <FaEnvelope className="text-[#D4AF37]" />
-                <a href="mailto:srm@infinitymedia1.net" className="hover:text-[#D4AF37] transition-colors border-b border-transparent hover:border-[#D4AF37] pb-0.5">
-                  srm@infinitymedia1.net
+                <a href="mailto:guyheartphotography11@gmail.com" className="hover:text-[#D4AF37] transition-colors border-b border-transparent hover:border-[#D4AF37] pb-0.5">
+                  guyheart@infinitymedia1.net
                 </a>
               </div>
               <div className="flex items-center gap-3">
@@ -41,7 +39,7 @@ return (
             <h4 className="text-lg font-serif font-medium text-slate-600 mb-6">Follow Us</h4>
             <div className="space-y-3 text-sm">
               <a 
-                href="https://www.instagram.com/social_republic_media/" 
+                href="https://www.instagram.com/guyheart_photography/" 
                 target="_blank" 
                 rel="noopener noreferrer"
                 className="flex items-center gap-3 hover:text-[#D4AF37] transition-colors"
@@ -50,7 +48,7 @@ return (
                 Instagram
               </a>
               <a 
-                href="https://www.facebook.com/profile.php?id=61581699719512&sk=about&_rdc=1&_rdr#" 
+                href="https://web.facebook.com/profile.php?id=61582485134150" 
                 target="_blank" 
                 rel="noopener noreferrer"
                 className="flex items-center gap-3 hover:text-[#D4AF37] transition-colors"
@@ -59,7 +57,7 @@ return (
                 Facebook
               </a>
               <a 
-                href="https://www.tiktok.com/@socialrepublicmedia?_t=zs-9100tqfeqoy&_r=1" 
+                href="https://www.tiktok.com/@guyheartphotography?is_from_webapp=1&sender_device=pc" 
                 target="_blank" 
                 rel="noopener noreferrer"
                 className="flex items-center gap-3 hover:text-[#D4AF37] transition-colors"
@@ -68,29 +66,36 @@ return (
                 TikTok
               </a>
               <a 
-                href="https://www.whatsapp.com/@socialrepublicmedia?_t=zs-9100tqfeqoy&_r=1" 
+                href="https://lin.ee/m6EBMRf " 
                 target="_blank" 
                 rel="noopener noreferrer"
                 className="flex items-center gap-3 hover:text-[#D4AF37] transition-colors"
               >
-                <FaWhatsapp className="text-lg" />
-                WhatsApp
+                <FaLine className="text-lg" />
+                Line
+              </a>
+              <a 
+                href="https://www.youtube.com/@GuyHeartPhotography" 
+                target="_blank" 
+                rel="noopener noreferrer"
+                className="flex items-center gap-3 hover:text-[#D4AF37] transition-colors"
+              >
+                <FaYoutube className="text-lg" />
+                YouTube
               </a>
             </div>
           </div>
 
           {/* --- Column 3: Services --- */}
           <div>
-            <h4 className="text-lg font-serif font-medium text-slate-600 mb-6">Services</h4>
+            <h4 className="text-lg font-serif font-medium text-slate-600 mb-6">Visit Us</h4>
             <ul className="space-y-2 text-sm">
-              {/* <li><Link to="/services/Product" className="hover:text-[#D4AF37] transition-colors border-b border-transparent hover:border-[#D4AF37] pb-0.5 inline-block">Product Photography</Link></li>
-              <li><Link to="/services/Lifestyles" className="hover:text-[#D4AF37] transition-colors border-b border-transparent hover:border-[#D4AF37] pb-0.5 inline-block">Lifestyle & Interior</Link></li>
-              <li><Link to="/services/Food" className="hover:text-[#D4AF37] transition-colors border-b border-transparent hover:border-[#D4AF37] pb-0.5 inline-block">Food & Beverage</Link></li>
-              <li><Link to="/services/Event" className="hover:text-[#D4AF37] transition-colors border-b border-transparent hover:border-[#D4AF37] pb-0.5 inline-block">Event Photography</Link></li>
-              <li><Link to="/services/VideoCor" className="hover:text-[#D4AF37] transition-colors border-b border-transparent hover:border-[#D4AF37] pb-0.5 inline-block">Corporate Video</Link></li>
-              <li><Link to="/services/VideoEvent" className="hover:text-[#D4AF37] transition-colors border-b border-transparent hover:border-[#D4AF37] pb-0.5 inline-block">Event Video</Link></li>
-              <li><Link to="/services/VideoSocial" className="hover:text-[#D4AF37] transition-colors border-b border-transparent hover:border-[#D4AF37] pb-0.5 inline-block">Social Media Video</Link></li>
-              <li><Link to="/services/Social" className="hover:text-[#D4AF37] transition-colors border-b border-transparent hover:border-[#D4AF37] pb-0.5 inline-block">Social Media Marketing</Link></li> */}
+              <li><Link to="/services" className="hover:text-[#D4AF37] transition-colors border-b border-transparent hover:border-[#D4AF37] pb-0.5 inline-block">Services</Link></li>
+              <li><Link to="/portfolio" className="hover:text-[#D4AF37] transition-colors border-b border-transparent hover:border-[#D4AF37] pb-0.5 inline-block">Portfolio</Link></li>
+              <li><Link to="/video" className="hover:text-[#D4AF37] transition-colors border-b border-transparent hover:border-[#D4AF37] pb-0.5 inline-block">Video</Link></li>
+              <li><Link to="/blog" className="hover:text-[#D4AF37] transition-colors border-b border-transparent hover:border-[#D4AF37] pb-0.5 inline-block">Blog</Link></li>
+              <li><Link to="/about" className="hover:text-[#D4AF37] transition-colors border-b border-transparent hover:border-[#D4AF37] pb-0.5 inline-block">About</Link></li>
+              <li><Link to="/contact" className="hover:text-[#D4AF37] transition-colors border-b border-transparent hover:border-[#D4AF37] pb-0.5 inline-block">Contact</Link></li>
             </ul>
           </div>
 
@@ -99,7 +104,7 @@ return (
             <h4 className="text-lg font-serif font-medium text-slate-600 mb-6">Location</h4>
             <div className="rounded-lg overflow-hidden shadow-md border border-gray-200 mb-4">
               <iframe
-                title="Social Republic Media Location"
+                title="Guy Heart Photography Location"
                 src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3875.5836334696505!2d100.55382081143256!3d13.743639686591731!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x30e29ee66b26b361%3A0x6e67ed7475173d32!2sHYDE%20Sukhumvit%2011!5e0!3m2!1sen!2sth!4v1763368560533!5m2!1sen!2sth"
                 width="100%"
                 height="200"
@@ -122,10 +127,10 @@ return (
         <div className="flex flex-col md:flex-row justify-between items-center text-sm text-slate-400">
           <p>© 2025 Social Republic Media. All rights reserved.</p>
           <div className="flex gap-6 mt-4 md:mt-0">
-            {/* <Link to="/" className="hover:text-[#D4AF37] transition-colors">Home</Link>
+            <Link to="/" className="hover:text-[#D4AF37] transition-colors">Home</Link>
             <Link to="/contact" className="hover:text-[#D4AF37] transition-colors">Contact</Link>
-            <Link to="/gallery" className="hover:text-[#D4AF37] transition-colors">Gallery</Link>
-            <Link to="/terms" className="hover:text-[#D4AF37] transition-colors">Terms</Link> */}
+            <Link to="/portfolio" className="hover:text-[#D4AF37] transition-colors">Gallery</Link>
+            <Link to="/terms" className="hover:text-[#D4AF37] transition-colors">Terms</Link>
           </div>
         </div>
       </div>

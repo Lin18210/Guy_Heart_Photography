@@ -8,23 +8,42 @@ import ContactSection from '../Components/Contact';
 import BounceCards from '../Components/BounceCard';
 
 // --- IMAGES ---
-import portfolioImg1 from '../assets/Images/Selected Final High Res Guy Heart/Couple 2/51.webp';
-import portfolioImg2 from '../assets/Images/Selected Final High Res Guy Heart/Couple 3/36.webp';
-import portfolioImg3 from '../assets/Images/Selected Final High Res Guy Heart/Couple 5/4.webp';
-import portfolioImg4 from '../assets/Images/Selected Final High Res Guy Heart/Couple 3/3.webp';
-import portfolioImg5 from '../assets/Images/Selected Final High Res Guy Heart/Couple 5/12.webp';
+<<<<<<< HEAD
+import portfolioImg1 from '../assets/Images/Compressed GH/GH/pexels-jonathanborba-11994907.webp';
+import portfolioImg2 from '../assets/Images/Compressed GH/GH/cheerful-newlyweds-at-beach-wedding-ceremony-2025-02-10-00-14-59-utc.webp';
+import portfolioImg3 from '../assets/Images/Compressed GH/GH/pexels-jin-wedding-3859587-5729187.webp';
+import portfolioImg4 from '../assets/Images/Compressed GH/GH/pexels-jonathanborba-12031176.webp';
+import portfolioImg5 from '../assets/Images/Compressed GH/GH/pexels-san-wedding-1649543-5544650.webp';
+=======
+import portfolioImg1 from '../assets/All/Picflow Images Dec 11/blonde-bride-in-a-tight-wedding-dress-in-a-studio-2025-11-11-20-33-08-utc.webp';
+import portfolioImg2 from '../assets/All/Picflow Images Dec 11/cheerful-newlyweds-at-beach-wedding-ceremnoy-2025-02-10-00-04-40-utc.webp';
+import portfolioImg3 from '../assets/All/Picflow Images Dec 11/couple-of-bride-and-groom-enjoying-romantic-moment-2024-12-22-23-18-08-utc.webp';
+import portfolioImg4 from '../assets/All/Picflow Images Dec 11/wedding-ceremony-at-the-beach-2025-02-09-22-57-20-utc.webp';
+import portfolioImg5 from '../assets/All/Picflow Images Dec 11/bride-in-elegant-wedding-dress-2024-12-22-23-18-24-utc.webp';
+>>>>>>> 9bf898c6437aba7603526bb012fa8d89c59c6782
 
-import LaughingWoman from '../assets/Laughing Woman.jpeg';
+import LaughingWoman from '../assets/All/Picflow Images Dec 11/Laughing.jpeg';
 
 // Gallery images
-import gallery1 from '../assets/Images/Selected Final High Res Guy Heart/Couple 2/51.webp';
-import gallery2 from '../assets/Images/Selected Final High Res Guy Heart/Couple 3/36.webp';
-import gallery3 from '../assets/Images/Selected Final High Res Guy Heart/Couple 5/4.webp';
-import gallery4 from '../assets/Images/Selected Final High Res Guy Heart/Couple 1/16.webp';
-import gallery5 from '../assets/Images/Selected Final High Res Guy Heart/Couple 3/32.webp';
-import gallery6 from '../assets/Images/Selected Final High Res Guy Heart/Couple 5/42.webp';
-import gallery7 from '../assets/Images/Selected Final High Res Guy Heart/Couple 3/31.webp';
-import gallery8 from '../assets/Images/Selected Final High Res Guy Heart/Couple 5/40.webp';
+<<<<<<< HEAD
+import gallery1 from '../assets/Images/Compressed GH/GH/pexels-jin-wedding-3859587-5729206.webp';
+import gallery2 from '../assets/Images/Compressed GH/GH/pexels-jonathanborba-13110257.webp';
+import gallery3 from '../assets/Images/Compressed GH/GH/pexels-tr-n-long-3093985-13112044.webp';
+import gallery4 from '../assets/Images/Compressed GH/GH/Guy Lev Or-137.webp';
+import gallery5 from '../assets/Images/Compressed GH/GH/pexels-tr-n-long-3093985-5984181.webp';
+import gallery6 from '../assets/Images/Compressed GH/GH/pexels-masoodaslami-29624006.webp';
+import gallery7 from '../assets/Images/Compressed GH/GH/pexels-simeart-30311767.webp';
+import gallery8 from '../assets/Images/Compressed GH/GH/pexels-wellington-tavares-1593705508-27552391.webp';
+=======
+import gallery1 from '../assets/All/Picflow Images Dec 11/cutting-the-wedding-cake-against-the-backdrop-of-w-2025-11-11-20-46-12-utc.webp';
+import gallery2 from '../assets/All/Picflow Images Dec 11/young-caucasian-couple-39-s-wedding-day-2025-02-10-00-08-00-utc.webp';
+import gallery3 from '../assets/All/Picflow Images Dec 11/groom-kissing-beautiful-bride-s-hand-2024-12-22-23-18-28-utc.webp';
+import gallery4 from '../assets/All/Picflow Images Dec 11/all-you-need-now-is-your-beautiful-bride-2025-04-06-10-59-28-utc.webp';
+import gallery5 from '../assets/All/Picflow Images Dec 11/young-couple-getting-married-at-the-beach-2025-02-10-12-15-21-utc.webp';
+import gallery6 from '../assets/All/Picflow Images Dec 11/couple-of-bride-and-groom-enjoying-romantic-moment-2024-12-22-23-18-34-utc.webp';
+import gallery7 from '../assets/All/Picflow Images Dec 11/young-couple-in-a-wedding-ceremony-at-the-beach-2025-02-10-04-37-10-utc.webp';
+import gallery8 from '../assets/All/Picflow Images Dec 11/photographer-taking-pictures-of-bride-and-groom-2024-12-22-23-18-12-utc.webp';
+>>>>>>> 9bf898c6437aba7603526bb012fa8d89c59c6782
 
 // Logo images
 import logo1 from '../assets/Images/Logos/Logo1.png';
@@ -35,13 +54,18 @@ import logo5 from '../assets/Images/Logos/Logo5.png';
 import logo6 from '../assets/Images/Logos/Logo6.png';
 
 //Review Images
-import reviewImg1 from '../assets/Images/Final high res images destination wedding website/Couple 1/8.webp';
-import reviewImg2 from '../assets/Images/Final high res images destination wedding website/Couple 1/Friends.jpg';
+<<<<<<< HEAD
+import reviewImg1 from '../assets/Images/Compressed GH/GH/pexels-habib-hosseini-3673470.webp';
+import reviewImg2 from '../assets/Images/Compressed GH/GH/Guy Heart Studio-0039.webp';
+=======
+import reviewImg1 from '../assets/All/Picflow Images Dec 11/heres-to-love-and-happily-ever-after-cropped-shot-2025-04-06-08-43-11-utc.webp';
+import reviewImg2 from '../assets/All/Picflow Images Dec 11/live-for-the-moments-you-cant-put-into-words-2025-04-06-08-44-17-utc.webp';
+>>>>>>> 9bf898c6437aba7603526bb012fa8d89c59c6782
 
 const Portfolio_Images = [portfolioImg1, portfolioImg2, portfolioImg3];
 const LOGOS = [logo1, logo2, logo3, logo4, logo5, logo6];
 
-// --- NEW DATA: MOMENT GALLERY ---
+// --- NEW DATA: MOMENT GALLERY --- //
 const MOMENT_GALLERY_IMAGES = [
   gallery1, gallery2, gallery3,
   gallery4, gallery5, gallery6,
@@ -307,8 +331,8 @@ const Home = () => {
                className="w-[90%] md:w-[40%] bg-[#7a93a5] text-white p-8 md:p-12 rounded-lg shadow-xl z-10 mt-[-50px] md:mt-0 md:-ml-12 relative"
             >
               <h3 className="font-serif text-2xl md:text-3xl leading-snug mb-4 md:mb-6">“Captured <span className="text-amber-400">emotions</span>. Evocative tones.”</h3>
-              <p className="font-sans text-xs md:text-sm leading-relaxed opacity-90 mb-6 md:mb-8">As a visual storyteller, I'm driven by documenting authentic connections. As a creative, I'm fascinated by the interplay of shadow and form. Below are some of my most cherished images illustrating genuine emotions and evocative tones from various locations.</p>
-              <p className="font-serif text-sm text-right opacity-80">— Guy Heart</p>
+              <p className="font-sans text-xs md:text-sm leading-relaxed opacity-90 mb-6 md:mb-8">As a visual storyteller, We are driven by documenting authentic connections. As a creative, We are fascinated by the interplay of shadow and form. Below are some of our most cherished images illustrating genuine emotions and evocative tones from various locations.</p>
+              <p className="font-serif text-sm text-right opacity-80">— Guy Heart Photography</p>
             </motion.div>
           </div>
 
@@ -320,7 +344,7 @@ const Home = () => {
             <div className="grid grid-cols-3 md:flex md:flex-wrap justify-center items-center gap-6 md:gap-12 opacity-70">
               {LOGOS.map((logo, index) => (
                 <motion.div variants={fadeInUp} key={index} className="flex justify-center">
-                  <img src={logo} alt={`Featured Logo ${index + 1}`} className="h-8 md:h-20 w-auto object-contain grayscale hover:grayscale-0 transition-all duration-300 cursor-pointer" />
+                  <img src={logo} alt={`Featured Logo ${index + 1}`} className="h-8 md:h-20 w-30 object-contain grayscale hover:grayscale-0 transition-all duration-300 cursor-pointer" />
                 </motion.div>
               ))}
             </div>

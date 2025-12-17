@@ -7,21 +7,21 @@ import {
 } from 'lucide-react';
 
 // Keep your existing imports
-import img1 from '../assets/Images/Selected Final High Res Guy Heart/Couple 4/10.webp'
-import img2 from '../assets/Images/Selected Final High Res Guy Heart/Couple 4/11.webp'
-import img3 from '../assets/Images/Selected Final High Res Guy Heart/Couple 4/21.webp'
+import img1 from '../assets/Images/Compressed GH/GH/13.webp'
+import img2 from '../assets/Images/Compressed GH/GH/16.webp'
+import img3 from '../assets/Images/Compressed GH/GH/17-min.webp'
 
 import Artistic from '../assets/Images/Artistic.jpg';
 
 //Photojournalism Section 
-import photo1 from '../assets/Images/Selected Final High Res Guy Heart/Couple 1/18.webp'
-import photo2 from '../assets/Images/Selected Final High Res Guy Heart/Couple 1/21.webp'
-import photo3 from '../assets/Images/Selected Final High Res Guy Heart/Couple 1/30.webp'
+import photo1 from '../assets/Images/Compressed GH/GH/20.webp'
+import photo2 from '../assets/Images/Compressed GH/GH/26.webp'
+import photo3 from '../assets/Images/Compressed GH/GH/Guy Lev Or-71.webp'
 
 //What Happen Next Section
-import step1 from '../assets/Images/Selected Final High Res Guy Heart/Couple 2/22.webp'
-import step2 from '../assets/Images/Selected Final High Res Guy Heart/Couple 2/28.webp'
-import step3 from '../assets/Images/Selected Final High Res Guy Heart/Couple 2/35.webp'
+import step1 from '../assets/Images/Compressed GH/GH/pexels-jin-wedding-3859587-5729127.webp'
+import step2 from '../assets/Images/Compressed GH/GH/pexels-jin-wedding-3859587-5729187.webp'
+import step3 from '../assets/Images/Compressed GH/GH/pexels-jin-wedding-3859587-5729206.webp'
 
 const Services = () => {
   const [activeTab, setActiveTab] = useState('photography');
@@ -62,7 +62,6 @@ const Services = () => {
         "150–300 Professionally Edited Images",
         "Ceremony, Portraits & Intimate Details",
         "Pre-wedding Planning Session",
-        "Private Online Gallery with Download Access",
         "Complimentary Photo Album",
         "Creative Posing Guidance",
         "Natural Direction Throughout Session"
@@ -80,7 +79,6 @@ const Services = () => {
         "300–500 High-Resolution Edited Images",
         "Color & Black-and-White Tones",
         "Pre-wedding Consultation",
-        "Private Online Gallery",
         "Complimentary Photo Album",
         "Creative Posing Guidance",
         "Natural, Candid & Editorial-Style Storytelling"
@@ -100,7 +98,6 @@ const Services = () => {
         "Pre-shoot Consultation",
         "Styling & Theme Concepts Planning",
         "Location Planning Included",
-        "Private Online Gallery",
         "Artistically Enhanced Images"
       ],
       popular: false
@@ -121,7 +118,6 @@ const Services = () => {
         "3–4 Min Cinematic Highlight Film",
         "Licensed Music & Emotional Storytelling",
         "Professional Color Grading & Editing",
-        "Private Online Gallery (HD + Mobile)",
         "Perfect for Heartfelt Story Summaries"
       ],
       popular: false
@@ -140,8 +136,7 @@ const Services = () => {
         "15–25 Min Extended Documentary Edit",
         "Vows, Speeches & Key Moments Included",
         "Pre-event Consultation",
-        "Professional Color Grading & Editing",
-        "Private Online Gallery for Viewing & Sharing"
+        "Professional Color Grading & Editing"
       ],
       popular: true
     },
@@ -217,7 +212,7 @@ const Services = () => {
           animate={{ opacity: 1, y: 0 }}
           className="text-amber-600 font-medium tracking-widest uppercase text-sm mb-3"
         >
-          Investment
+          
         </motion.h2>
         <motion.h1 
           initial={{ opacity: 0, y: -20 }}
@@ -461,7 +456,9 @@ const Services = () => {
                 Aesthetics
               </h3>
               <p className="text-[#7997AF] leading-8 text-lg font-light">
-                For us, the essence of wedding aesthetics isn't about capturing perfect images, but about sculpting an immersive atmosphere. It's discovered in the subtle glow, the emotional resonance colors impart, and the intricate textures that enrich a story’s narrative. Our pursuit, however, transcends mere photographic flawlessness...
+                For us, wedding aesthetics are not merely about capturing beautiful images—they are about crafting an atmosphere that feels intentional, immersive, and emotionally alive.
+                It’s found in the quiet glow of light, the resonance of color, and the layered textures that shape the soul of a moment.
+                Our pursuit transcends perfection; it seeks the art, the emotion, and the timeless essence within every frame.
               </p>
             </div>
           </motion.div>
@@ -518,9 +515,9 @@ const Services = () => {
                 DOCUMENTARY
               </h2>
               <p className="text-sm md:text-base leading-relaxed opacity-95">
-                Throughout your day, my role is to observe, not to direct. 
-                I subtly navigate the event, seeking out authentic moments and profound connections. 
-                I align with couples who cherish genuine human interaction—those who wish to preserve 
+                Throughout your day, our role is to observe, not to direct. 
+                We subtly navigate the event, seeking out authentic moments and profound connections. 
+                We align with couples who cherish genuine human interaction—those who wish to preserve 
                 every tear, every joyous roar of laughter, and every tender, fleeting pause. 
                 This approach yields imagery that is sincere, deeply human, and brimming with emotion—your 
                 narrative unfolded precisely as it felt.
@@ -541,9 +538,8 @@ const Services = () => {
                   </h2>
                   <p className="text-[#7997AF] leading-relaxed text-lg font-light">
                       Where mood meets genuine emotion. Our cinematic work builds upon editorial precision, 
-                      adding layers of feeling to create guided moments that appear effortless yet timelessly impactful. 
-                      Photojournalism isn't just about candid shots; it's about the art of storytelling through 
-                      unscripted reality.
+                      adding layers of feeling to create guided moments that appear effortless yet timelessly impactful Photojournalism. 
+                      
                   </p>
                 </div>
 
@@ -604,7 +600,7 @@ const Services = () => {
               ARTISTIC
             </h2>
             <p className="text-base md:text-sm leading-loose font-[Inter] opacity-90">
-              My purpose transcends mere documentation—I am here to craft art. Each image is
+              Our purpose transcends mere documentation—We are here to craft art. Each image is
               meticulously conceived to grace your walls, not simply reside in a collection. Our focus
               isn't on fleeting trends, but on timeless, purposeful photography that deeply resonates
               with you, time and time again.
@@ -665,7 +661,7 @@ const Services = () => {
                 <h3 className="text-2xl md:text-3xl font-serif font-bold text-[#EBB34C] mb-2">STEP TWO</h3>
                 <h4 className="text-xl font-medium text-slate-800 mb-6">Plan Your Perfect Day</h4>
                 <p className="text-[#7997AF] leading-relaxed">
-                  Let's schedule a free consultation call. We'll discuss every detail, from locations to your desired style, ensuring a seamless and worry-free experience.
+                  Let's schedule a free consultation call. We'll discuss every detail, from locations to your desired style, ensuring a seamless and worry-free experience. A seamless experience with a deeply personal touch.
                 </p>
              </motion.div>
              <motion.div 
