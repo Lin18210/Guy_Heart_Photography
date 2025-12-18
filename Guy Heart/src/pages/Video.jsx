@@ -1,10 +1,10 @@
 import React from 'react'
 import { motion } from 'framer-motion'
 import BannerVid from '../assets/VIdeos/Website reel 2 .mp4'
-import story from '../assets/All/Picflow Images Dec 11/beautiful-wedding-couple-bride-and-groom-on-yacht-2025-01-10-20-31-10-utc.webp';
-import why from '../assets/All/Picflow Images Dec 11/happy-bride-on-a-yacht-white-yacht-with-sail-set-2025-01-10-20-37-41-utc.webp';
-import hybrid1 from '../assets/All/Picflow Images Dec 11/just-married-couple-on-yacht-happy-bride-and-groo-2025-01-10-20-33-03-utc.webp';
-import hybrid2 from '../assets/All/Picflow Images Dec 11/wedding-couple-is-hugging-on-a-yacht-beauty-bride-2025-01-10-20-30-58-utc.webp';
+import story from '../assets/Images/Compressed GH/GH/Guy Lev Or-138.webp';
+import why from '../assets/Images/Compressed GH/GH/IMG_6294.webp';
+import hybrid1 from '../assets/Images/Compressed GH/GH/pexels-jonathanborba-11994907.webp';
+import hybrid2 from '../assets/Images/Compressed GH/GH/pexels-alex-992000576-20222629.webp';
 
 const Video = () => {
   // --- Animation Variants ---
