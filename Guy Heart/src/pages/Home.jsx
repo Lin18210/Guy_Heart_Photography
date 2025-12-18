@@ -7,27 +7,7 @@ import ReviewCard from '../Components/ReviewCard';
 import ContactSection from '../Components/Contact';
 import BounceCards from '../Components/BounceCard';
 
-// --- IMAGES ---
-// --- IMAGES ---
-import portfolioImg1 from '../assets/All/Picflow Images Dec 11/blonde-bride-in-a-tight-wedding-dress-in-a-studio-2025-11-11-20-33-08-utc.webp';
-import portfolioImg2 from '../assets/All/Picflow Images Dec 11/cheerful-newlyweds-at-beach-wedding-ceremnoy-2025-02-10-00-04-40-utc.webp';
-import portfolioImg3 from '../assets/All/Picflow Images Dec 11/couple-of-bride-and-groom-enjoying-romantic-moment-2024-12-22-23-18-08-utc.webp';
-import portfolioImg4 from '../assets/All/Picflow Images Dec 11/wedding-ceremony-at-the-beach-2025-02-09-22-57-20-utc.webp';
-import portfolioImg5 from '../assets/All/Picflow Images Dec 11/bride-in-elegant-wedding-dress-2024-12-22-23-18-24-utc.webp';
-
-import LaughingWoman from '../assets/All/Picflow Images Dec 11/Laughing.jpeg';
-
-// Gallery images
-import gallery1 from '../assets/All/Picflow Images Dec 11/cutting-the-wedding-cake-against-the-backdrop-of-w-2025-11-11-20-46-12-utc.webp';
-import gallery2 from '../assets/All/Picflow Images Dec 11/young-caucasian-couple-39-s-wedding-day-2025-02-10-00-08-00-utc.webp';
-import gallery3 from '../assets/All/Picflow Images Dec 11/groom-kissing-beautiful-bride-s-hand-2024-12-22-23-18-28-utc.webp';
-import gallery4 from '../assets/All/Picflow Images Dec 11/all-you-need-now-is-your-beautiful-bride-2025-04-06-10-59-28-utc.webp';
-import gallery5 from '../assets/All/Picflow Images Dec 11/young-couple-getting-married-at-the-beach-2025-02-10-12-15-21-utc.webp';
-import gallery6 from '../assets/All/Picflow Images Dec 11/couple-of-bride-and-groom-enjoying-romantic-moment-2024-12-22-23-18-34-utc.webp';
-import gallery7 from '../assets/All/Picflow Images Dec 11/young-couple-in-a-wedding-ceremony-at-the-beach-2025-02-10-04-37-10-utc.webp';
-import gallery8 from '../assets/All/Picflow Images Dec 11/photographer-taking-pictures-of-bride-and-groom-2024-12-22-23-18-12-utc.webp';
-
-// Logo images
+// --- LOGO IMAGES ---
 import logo1 from '../assets/Images/Logos/Logo1.png';
 import logo2 from '../assets/Images/Logos/Logo2.jpeg';
 import logo3 from '../assets/Images/Logos/Logo3.jpg';
@@ -35,9 +15,34 @@ import logo4 from '../assets/Images/Logos/Logo4.png';
 import logo5 from '../assets/Images/Logos/Logo5.png';
 import logo6 from '../assets/Images/Logos/Logo6.png';
 
-//Review Images
-import reviewImg1 from '../assets/All/Picflow Images Dec 11/heres-to-love-and-happily-ever-after-cropped-shot-2025-04-06-08-43-11-utc.webp';
-import reviewImg2 from '../assets/All/Picflow Images Dec 11/live-for-the-moments-you-cant-put-into-words-2025-04-06-08-44-17-utc.webp';
+import laughingWoman from '../assets/Laughing Woman.jpeg'
+
+// --- DYNAMIC IMAGE IMPORTS ---
+// Loading images from "Compressed GH/GH" folder
+const imagesGlob = import.meta.glob('../assets/Images/Compressed GH/GH/*.{webp,png,jpg,jpeg}', { eager: true });
+const allImages = Object.values(imagesGlob).map(module => module.default);
+const getImage = (index) => allImages[index % allImages.length] || '';
+
+// Assign images to variables used in the component
+const portfolioImg1 = getImage(10);
+const portfolioImg2 = getImage(5);
+const portfolioImg3 = getImage(7);
+const portfolioImg4 = getImage(8);
+const portfolioImg5 = getImage(11);
+
+const LaughingWoman = getImage(20); // Feature image
+
+const gallery1 = getImage(6);
+const gallery2 = getImage(7);
+const gallery3 = getImage(8);
+const gallery4 = getImage(9);
+const gallery5 = getImage(10);
+const gallery6 = getImage(11);
+const gallery7 = getImage(12);
+const gallery8 = getImage(13);
+
+const reviewImg1 = getImage(15);
+const reviewImg2 = getImage(16);
 
 const Portfolio_Images = [portfolioImg1, portfolioImg2, portfolioImg3];
 const LOGOS = [logo1, logo2, logo3, logo4, logo5, logo6];
@@ -299,7 +304,7 @@ const Home = () => {
                initial="hidden" whileInView="visible" viewport={{ once: true, amount: 0.3 }} variants={fadeInLeft}
                className="w-full md:w-[55%] h-[400px] md:h-[500px] z-0"
             >
-              <BlurImage src={LaughingWoman} alt="Bride Laughing" className="w-full h-full shadow-lg" />
+              <BlurImage src={laughingWoman} alt="Bride Laughing" className="w-full h-full shadow-lg" />
             </motion.div>
 
             {/* Text Box Slide In Right */}

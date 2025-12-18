@@ -1,108 +1,9 @@
 import React, { useState, useEffect } from 'react'
 import Masonry from '../Components/Masonry'
 
-// --- Importing ALL 87 Picflow Images ---
-import img1 from '../assets/All/Picflow Images Dec 11/Copy of welcome-to-wedding-sign-and-reception-table-2024-12-22-23-18-38-utc.webp';
-import img2 from '../assets/All/Picflow Images Dec 11/a-special-day-brings-out-the-best-smiles-2025-04-06-09-01-03-utc.webp';
-import img3 from '../assets/All/Picflow Images Dec 11/all-that-glitters-is-usually-gold-2025-04-05-19-48-08-utc.webp';
-import img4 from '../assets/All/Picflow Images Dec 11/all-you-need-now-is-your-beautiful-bride-2025-04-06-10-59-28-utc.webp';
-import img5 from '../assets/All/Picflow Images Dec 11/an-indian-wedding-is-nothing-short-of-an-extravaga-2025-04-05-21-38-07-utc.webp';
-import img6 from '../assets/All/Picflow Images Dec 11/beautiful-wedding-couple-bride-and-groom-on-yacht-2025-01-10-20-31-10-utc.webp';
-import img7 from '../assets/All/Picflow Images Dec 11/beautiful-wedding-couple-bride-and-groom-on-yacht-2025-01-10-20-32-10-utc.webp';
-import img8 from '../assets/All/Picflow Images Dec 11/beautiful-wedding-couple-bride-and-groom-on-yacht-2025-01-10-20-37-40-utc.webp';
-import img9 from '../assets/All/Picflow Images Dec 11/beautiful-wedding-couple-bride-and-groom-on-yacht-2025-01-10-20-38-00-utc.webp';
-import img10 from '../assets/All/Picflow Images Dec 11/blonde-bride-in-a-tight-wedding-dress-in-a-studio-2025-11-11-20-33-08-utc.webp';
-import img11 from '../assets/All/Picflow Images Dec 11/bridal-white-high-heel-shoes-of-the-bride-2024-12-22-23-18-24-utc.webp';
-import img12 from '../assets/All/Picflow Images Dec 11/bride-and-groom-holding-wedding-candle-2024-12-22-23-18-34-utc.webp';
-import img13 from '../assets/All/Picflow Images Dec 11/bride-doing-makeup-and-hairstyle-on-ceremony-weddi-2024-12-22-23-18-16-utc.webp';
-import img14 from '../assets/All/Picflow Images Dec 11/bride-in-elegant-wedding-dress-2024-12-22-23-18-24-utc.webp';
-import img15 from '../assets/All/Picflow Images Dec 11/bride-in-white-bathrope-touching-elegant-wedding-2024-12-22-23-18-16-utc.webp';
-import img16 from '../assets/All/Picflow Images Dec 11/bride-in-white-bathrope-with-elegant-diamond-ring-2024-12-22-23-18-38-utc.webp';
-import img17 from '../assets/All/Picflow Images Dec 11/bride-throwing-the-bouquet-at-wedding-2025-02-11-09-54-57-utc.webp';
-import img18 from '../assets/All/Picflow Images Dec 11/cheerful-newlyweds-at-beach-wedding-ceremnoy-2025-02-10-00-04-40-utc.webp';
-import img19 from '../assets/All/Picflow Images Dec 11/cheerful-newlyweds-at-beach-wedding-ceremnoy-2025-02-10-05-29-05-utc.webp';
-import img20 from '../assets/All/Picflow Images Dec 11/cheerful-newlyweds-at-beach-wedding-ceremnoy-2025-02-10-08-38-38-utc.webp';
-import img21 from '../assets/All/Picflow Images Dec 11/cheerful-newlyweds-at-beach-wedding-ceremnoy-2025-02-10-09-58-30-utc.webp';
-import img22 from '../assets/All/Picflow Images Dec 11/cheerful-newlyweds-at-beach-wedding-ceremony-2025-02-10-00-14-59-utc.webp';
-import img23 from '../assets/All/Picflow Images Dec 11/close-up-of-tying-bow-on-elegant-white-bridal-wedd-2024-12-22-23-18-31-utc.webp';
-import img24 from '../assets/All/Picflow Images Dec 11/couple-of-bride-and-groom-enjoying-romantic-moment-2024-12-22-23-18-08-utc.webp';
-import img25 from '../assets/All/Picflow Images Dec 11/couple-of-bride-and-groom-enjoying-romantic-moment-2024-12-22-23-18-09-utc.webp';
-import img26 from '../assets/All/Picflow Images Dec 11/couple-of-bride-and-groom-enjoying-romantic-moment-2024-12-22-23-18-12-utc.webp';
-import img27 from '../assets/All/Picflow Images Dec 11/couple-of-bride-and-groom-enjoying-romantic-moment-2024-12-22-23-18-19-utc.webp';
-import img28 from '../assets/All/Picflow Images Dec 11/couple-of-bride-and-groom-enjoying-romantic-moment-2024-12-22-23-18-23-utc.webp';
-import img29 from '../assets/All/Picflow Images Dec 11/couple-of-bride-and-groom-enjoying-romantic-moment-2024-12-22-23-18-24-utc.webp';
-import img30 from '../assets/All/Picflow Images Dec 11/couple-of-bride-and-groom-enjoying-romantic-moment-2024-12-22-23-18-31-utc.webp';
-import img31 from '../assets/All/Picflow Images Dec 11/couple-of-bride-and-groom-enjoying-romantic-moment-2024-12-22-23-18-34-utc.webp';
-import img32 from '../assets/All/Picflow Images Dec 11/cutting-the-wedding-cake-against-the-backdrop-of-w-2025-11-11-20-46-12-utc1.webp';
-import img33 from '../assets/All/Picflow Images Dec 11/cutting-the-wedding-cake-against-the-backdrop-of-w-2025-11-11-20-46-12-utc.webp';
-import img34 from '../assets/All/Picflow Images Dec 11/cutting-the-wedding-cake-against-the-backdrop-of-w-2025-11-24-17-23-55-utc.webp';
-import img35 from '../assets/All/Picflow Images Dec 11/elegant-wedding-ring-on-the-bride-s-finger-2024-12-22-23-18-08-utc.webp';
-import img36 from '../assets/All/Picflow Images Dec 11/embrace-your-inner-queen-with-these-exquisite-bang-2025-04-06-09-44-32-utc.webp';
-import img37 from '../assets/All/Picflow Images Dec 11/fancy-footwear-for-a-special-day-2025-04-06-12-51-49-utc.webp';
-import img38 from '../assets/All/Picflow Images Dec 11/give-your-bride-the-gift-of-a-stylish-groom-2025-04-06-11-15-17-utc.webp';
-import img39 from '../assets/All/Picflow Images Dec 11/groom-in-suit-preparing-for-wedding-ceremony-2024-12-22-23-18-16-utc.webp';
-import img40 from '../assets/All/Picflow Images Dec 11/groom-kissing-beautiful-bride-s-hand-2024-12-22-23-18-28-utc.webp';
-import img41 from '../assets/All/Picflow Images Dec 11/groom-putting-on-elegant-shoes-for-beautiful-bride-2024-12-22-23-18-19-utc.webp';
-import img42 from '../assets/All/Picflow Images Dec 11/groom-taking-pictures-of-bride-for-wedding-day-2024-12-22-23-18-12-utc.webp';
-import img43 from '../assets/All/Picflow Images Dec 11/happy-bride-on-a-yacht-white-yacht-with-sail-set-2025-01-10-20-37-41-utc.webp';
-import img44 from '../assets/All/Picflow Images Dec 11/heres-to-love-and-happily-ever-after-cropped-shot-2025-04-06-08-43-11-utc.webp';
-import img45 from '../assets/All/Picflow Images Dec 11/i-thought-this-day-would-never-come-2025-04-06-04-27-56-utc.webp';
-import img46 from '../assets/All/Picflow Images Dec 11/just-married-couple-on-yacht-happy-bride-and-groo-2025-01-10-20-33-03-utc.webp';
-import img47 from '../assets/All/Picflow Images Dec 11/lets-complete-the-saree-look-2025-04-06-10-20-30-utc.webp';
-import img48 from '../assets/All/Picflow Images Dec 11/live-for-the-moments-you-cant-put-into-words-2025-04-06-08-44-17-utc.webp';
-import img49 from '../assets/All/Picflow Images Dec 11/makeup-jewellery-outfit-everything-is-perfect-2025-04-05-17-58-52-utc.webp';
-import img50 from '../assets/All/Picflow Images Dec 11/marry-the-one-who-makes-your-eyes-smile-2025-04-06-10-51-31-utc.webp';
-import img51 from '../assets/All/Picflow Images Dec 11/nothing-elevates-your-look-like-a-bit-of-gold-2025-04-06-09-51-34-utc.webp';
-import img52 from '../assets/All/Picflow Images Dec 11/nothing-makes-a-more-striking-statement-than-red-a-2025-04-06-08-00-05-utc.webp';
-import img53 from '../assets/All/Picflow Images Dec 11/nothing-makes-you-glow-like-getting-married-2025-04-06-07-36-42-utc.webp';
-import img54 from '../assets/All/Picflow Images Dec 11/photographer-taking-pictures-of-bride-and-groom-2024-12-22-23-18-12-utc.webp';
-import img55 from '../assets/All/Picflow Images Dec 11/portrait-of-the-newlyweds-at-the-presidium-2025-11-11-20-46-12-utc.webp';
-import img56 from '../assets/All/Picflow Images Dec 11/she-wears-her-shyness-perfectly-as-her-veil-2025-04-06-10-34-16-utc.webp';
-import img57 from '../assets/All/Picflow Images Dec 11/this-ceremony-is-the-meeting-of-two-souls-2025-04-05-18-41-43-utc.webp';
-import img58 from '../assets/All/Picflow Images Dec 11/today-i-make-it-offical-2025-04-06-07-08-35-utc.webp';
-import img59 from '../assets/All/Picflow Images Dec 11/today-you-become-a-king-2025-04-06-11-16-17-utc.webp';
-import img60 from '../assets/All/Picflow Images Dec 11/wedding-ceremony-at-the-beach-2025-02-09-22-57-20-utc.webp';
-import img61 from '../assets/All/Picflow Images Dec 11/wedding-ceremony-of-the-bride-and-groom-in-a-resta-2025-11-11-20-46-10-utc.webp';
-import img62 from '../assets/All/Picflow Images Dec 11/wedding-ceremony-of-the-bride-and-groom-in-a-resta-2025-11-11-20-46-11-utc1.webp';
-import img63 from '../assets/All/Picflow Images Dec 11/wedding-ceremony-of-the-bride-and-groom-in-a-resta-2025-11-11-20-46-11-utc2.webp';
-import img64 from '../assets/All/Picflow Images Dec 11/wedding-ceremony-of-the-bride-and-groom-in-a-resta-2025-11-11-20-46-11-utc.webp';
-import img65 from '../assets/All/Picflow Images Dec 11/wedding-ceremony-of-the-bride-and-groom-in-a-resta-2025-11-11-20-46-12-utc.webp';
-import img66 from '../assets/All/Picflow Images Dec 11/wedding-ceremony-of-the-bride-and-groom-in-a-resta-2025-11-11-20-57-52-utc1.webp';
-import img67 from '../assets/All/Picflow Images Dec 11/wedding-ceremony-of-the-bride-and-groom-in-a-resta-2025-11-11-20-57-52-utc.webp';
-import img68 from '../assets/All/Picflow Images Dec 11/wedding-ceremony-of-the-bride-and-groom-in-a-resta-2025-11-24-17-21-49-utc1.webp';
-import img69 from '../assets/All/Picflow Images Dec 11/wedding-ceremony-of-the-bride-and-groom-in-a-resta-2025-11-24-17-21-49-utc2.webp';
-import img70 from '../assets/All/Picflow Images Dec 11/wedding-ceremony-of-the-bride-and-groom-in-a-resta-2025-11-24-17-21-49-utc.webp';
-import img71 from '../assets/All/Picflow Images Dec 11/wedding-couple-is-hugging-on-a-yacht-beauty-bride-2025-01-10-20-30-58-utc.webp';
-import img72 from '../assets/All/Picflow Images Dec 11/wedding-couple-is-hugging-on-a-yacht-beauty-bride-2025-01-10-20-40-43-utc.webp';
-import img73 from '../assets/All/Picflow Images Dec 11/wedding-couple-is-hugging-on-a-yacht-beauty-bride-2025-01-10-20-40-47-utc.webp';
-import img74 from '../assets/All/Picflow Images Dec 11/welcome-to-wedding-sign-and-reception-table-2024-12-22-23-18-38-utc.webp';
-import img75 from '../assets/All/Picflow Images Dec 11/white-yacht-with-sail-set-goes-along-the-island-on-2025-01-10-20-40-33-utc.webp';
-import img76 from '../assets/All/Picflow Images Dec 11/young-caucasian-couple-39-s-wedding-day-2025-02-10-00-08-00-utc.webp';
-import img77 from '../assets/All/Picflow Images Dec 11/young-caucasian-couple-39-s-wedding-day-2025-02-10-00-09-36-utc.webp';
-import img78 from '../assets/All/Picflow Images Dec 11/young-caucasian-couple-39-s-wedding-day-2025-02-10-00-40-43-utc.webp';
-import img79 from '../assets/All/Picflow Images Dec 11/young-caucasian-couple-39-s-wedding-day-2025-02-10-13-05-08-utc.webp';
-import img80 from '../assets/All/Picflow Images Dec 11/young-caucasian-couple-39-s-wedding-day-2025-02-10-13-48-19-utc.webp';
-import img81 from '../assets/All/Picflow Images Dec 11/young-couple-getting-married-at-the-beach-2025-02-10-12-15-21-utc.webp';
-import img82 from '../assets/All/Picflow Images Dec 11/young-couple-in-a-wedding-ceremony-at-the-beach-2025-02-10-02-23-47-utc.webp';
-import img83 from '../assets/All/Picflow Images Dec 11/young-couple-in-a-wedding-ceremony-at-the-beach-2025-02-10-04-37-10-utc.webp';
-import img84 from '../assets/All/Picflow Images Dec 11/young-couple-the-bride-and-groom-walking-along-a-2025-11-11-20-46-11-utc.webp';
-import img85 from '../assets/All/Picflow Images Dec 11/young-couple-the-bride-and-groom-walking-along-a-2025-11-11-20-46-12-utc1.webp';
-import img86 from '../assets/All/Picflow Images Dec 11/young-couple-the-bride-and-groom-walking-along-a-2025-11-11-20-46-12-utc.webp';
-import img87 from '../assets/All/Picflow Images Dec 11/young-couple-the-bride-and-groom-walking-along-a-2025-11-24-17-21-49-utc.webp';
-
-
-// --- Array of All Imported Images ---
-const rawItems = [
-    img1, img2, img3, img4, img5, img6, img7, img8, img9, img10,
-    img11, img12, img13, img14, img15, img16, img17, img18, img19, img20,
-    img21, img22, img23, img24, img25, img26, img27, img28, img29, img30,
-    img31, img32, img33, img34, img35, img36, img37, img38, img39, img40,
-    img41, img42, img43, img44, img45, img46, img47, img48, img49, img50,
-    img51, img52, img53, img54, img55, img56, img57, img58, img59, img60,
-    img61, img62, img63, img64, img65, img66, img67, img68, img69, img70,
-    img71, img72, img73, img74, img75, img76, img77, img78, img79, img80,
-    img81, img82, img83, img84, img85, img86, img87
-];
+// --- Importing Images via Glob ---
+const imagesGlob = import.meta.glob('../assets/Images/Compressed GH/GH/*.{webp,png,jpg,jpeg}', { eager: true });
+const rawItems = Object.values(imagesGlob).map(module => module.default);
 
 // --- Helper to assign random heights ---
 // Returns one of standard heights: 250, 400, 600
@@ -134,6 +35,9 @@ const Portfolio = () => {
     setItems(shuffled);
   }, []);
 
+  // Pick a random image for the banner or use a specific one if available
+  const bannerImage = rawItems.length > 5 ? rawItems[5] : (rawItems[0] || '');
+
   return (
     <div className="w-full bg-white">
       
@@ -143,7 +47,7 @@ const Portfolio = () => {
         {/* Background Image with Blur & Dark Overlay */}
         <div className="absolute inset-0 z-0">
             <img 
-                src={img6} // Using one of your images as the hero background
+                src={bannerImage} // Using dynamic image for hero background
                 alt="Background" 
                 className="w-full h-full object-cover object-center brightness-50 blur-[2px] scale-105"
             />
