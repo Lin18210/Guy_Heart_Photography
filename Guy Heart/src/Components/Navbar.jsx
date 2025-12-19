@@ -1,20 +1,14 @@
 import React, { useState, useEffect } from 'react';
 import { Menu, X } from 'lucide-react';
 import { useNavigate, useLocation, Link } from 'react-router-dom';
+import { useTranslation } from 'react-i18next';
 import LogoImg from '../assets/Logo.png';
-
-const NAV_LINKS = [
-  { name: 'Home', href: '/' },
-  { name: 'Gallery', href: '/portfolio' },
-  { name: 'Services', href: '/services' },
-  { name: 'Video', href: '/video' },
-  { name: 'Blog', href: '/blog' },
-  { name: 'About', href: '/about' },
-];
+import LanguageSelector from './LanguageSelector';
 
 const Navbar = () => {
   const [isScrolled, setIsScrolled] = useState(false);
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
+  const { t } = useTranslation();
   
   // useNavigate hook for programmatic navigation
   const navigate = useNavigate();
@@ -26,6 +20,15 @@ const Navbar = () => {
 
   const textColorClass = isTransparent ? 'text-gray-200' : 'text-gray-600';
   const hoverColorClass = isTransparent ? 'hover:text-yellow-400' : 'hover:text-yellow-600';
+
+  const NAV_LINKS = [
+    { name: t('navbar.home'), href: '/' },
+    { name: t('navbar.gallery'), href: '/portfolio' },
+    { name: t('navbar.services'), href: '/services' },
+    { name: t('navbar.video'), href: '/video' },
+    { name: t('navbar.blog'), href: '/blog' },
+    { name: t('navbar.about'), href: '/about' },
+  ];
 
   useEffect(() => {
     const handleScroll = () => {
@@ -75,18 +78,27 @@ const Navbar = () => {
               ))}
             </div>
               
-            {/* CTA Button */}
-            <div className="hidden md:block">
+            {/* Action Buttons (Lang + Contact) */}
+            <div className="hidden md:flex items-center space-x-6">
+               {/* Language Selector Desktop - MOVED HERE */}
+               <LanguageSelector isTransparent={isTransparent} />
+
+               {/* CTA Button */}
               <button 
                 onClick={() => handleNavigation('/contact')}
                 className="bg-[#6B8E9B] hover:bg-[#5a7a85] text-white px-6 py-2 rounded text-sm font-medium transition-colors shadow-sm cursor-pointer"
               >
-                Contact Us
+                {t('navbar.contact')}
               </button>
             </div>
 
             {/* Mobile Menu Button */}
-            <div className="md:hidden">
+            <div className="md:hidden flex items-center gap-4">
+               {/* Language Selector Mobile (visible in header) */}
+              {/* <div className={!isTransparent ? 'text-gray-800' : 'text-white'}>
+                 <LanguageSelector isTransparent={isTransparent} />
+              </div> */}
+              
               <button 
                 onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
                 className={`p-2 rounded-md ${!isTransparent ? 'text-gray-800' : 'text-white'}`}
@@ -109,11 +121,16 @@ const Navbar = () => {
                 {link.name}
               </button>
             ))}
+             {/* Language Selector Mobile (inside menu) */}
+            <div className="py-2 border-t border-gray-100">
+               <LanguageSelector isMobile={true} />
+            </div>
+
             <button 
                 onClick={() => handleNavigation('/contact')}
                 className="bg-[#6B8E9B] text-white py-3 rounded text-center w-full"
             >
-              Contact Us
+              {t('navbar.contact')}
             </button>
           </div>
         )}

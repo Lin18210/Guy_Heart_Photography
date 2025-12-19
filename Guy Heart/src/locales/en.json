@@ -1,0 +1,59 @@
+{
+  "navbar": {
+    "home": "Home",
+    "gallery": "Gallery",
+    "services": "Services",
+    "video": "Video",
+    "blog": "Blog",
+    "about": "About",
+    "contact": "Contact Us"
+  },
+  "home": {
+    "hero": {
+        "title": "Destination Wedding Photographer",
+        "subtitle": "In Thailand",
+        "description": "Operating across this beautiful country"
+    },
+    "intro": "As a dedicated team of professional photographers, we specialize in capturing the genuine essence of your most significant life moments. With over a decade of experience, we transform your precious occasions into enduring visual narratives that you'll cherish for a Forever.",
+    "captured_emotions": {
+        "title_part1": "Captured",
+        "title_part2": "emotions",
+        "title_part3": ". Evocative tones.",
+        "description": "As a visual storyteller, We are driven by documenting authentic connections. As a creative, We are fascinated by the interplay of shadow and form. Below are some of our most cherished images illustrating genuine emotions and evocative tones from various locations.",
+        "featured_on": "Featured On"
+    },
+    "gallery": {
+        "title": "Our Gallery",
+        "description": "Our gallery showcases the heartfelt moments, quiet details, and genuine emotions that make every wedding unique.",
+        "button": "VIEW OUR GALLERY"
+    },
+    "gift": {
+        "title_part1": "A Special",
+        "title_part2": "Gift",
+        "title_part3": "From Guy Heart Photography",
+        "description": "FREE Digital Wedding Album when you book a photo/video package",
+        "button": "View Full Album"
+    },
+    "reviews": {
+        "title": "WHAT OUR COUPLES SAY",
+        "description": "Heartfelt stories shared by the people behind the moments we captured — a reflection of the love, trust, and memories that made their day unforgettable.",
+        "grid_title_1": "WHAT OTHER COUPLES",
+        "grid_title_2": "LOVED MOST ABOUT US?"
+    },
+    "stats": {
+        "title": "Helping Couples Bring to Life Their Wedding Dream",
+        "years": "Years Experience",
+        "photos": "Photo Delivered",
+        "events": "Events Captured",
+        "awards": "International Awards"
+    },
+    "faqs": {
+        "title": "FAQs"
+    },
+    "moment": {
+        "title": "A Moment To Remember",
+        "description": "Your special day is more than a celebration—it’s a memory you’ll cherish forever. We capture every heartfelt moment so you can relive the joy again and again.",
+        "button": "OUR GALLERY"
+    }
+  }
+}

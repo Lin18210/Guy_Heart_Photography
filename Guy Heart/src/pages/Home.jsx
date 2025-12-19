@@ -1,6 +1,7 @@
 import React, { useState, useRef } from 'react'; 
 import { motion, useInView } from 'framer-motion'; 
 import { Link } from 'react-router-dom';
+import { useTranslation } from 'react-i18next';
 import { FaInstagram, FaFacebook, FaTiktok, FaEnvelope, FaLine, FaYoutube } from 'react-icons/fa';
 import Heroslider from '../Components/Heroslider';
 import ServicesSlider from '../Components/ServicesSlider';
@@ -90,13 +91,7 @@ const FAQ_DATA = [
   }
 ];
 
-// --- NEW DATA: STATS ---
-const STATS_DATA = [
-  { number: "10", label: "Years Experience" },
-  { number: "20k+", label: "Photo Delivered" },
-  { number: "300+", label: "Events Captured" },
-  { number: "8", label: "International Awards" }
-];
+// --- STATS DATA MOVED INSIDE COMPONENT ---
 
 // --- GRID REVIEWS DATA ---
 const GRID_REVIEWS = [
@@ -202,6 +197,14 @@ const FAQItem = ({ question, answer }) => {
 
 const Home = () => {
 
+  const { t } = useTranslation();  
+  // --- NEW DATA: STATS ---
+  const STATS_DATA = [
+    { number: "10", label: t('home.stats.years') },
+    { number: "20k+", label: t('home.stats.photos') },
+    { number: "300+", label: t('home.stats.events') },
+    { number: "8", label: t('home.stats.awards') }
+  ];
 
   const bounceCardRef = useRef(null);
 
@@ -251,9 +254,9 @@ const Home = () => {
             initial="hidden" whileInView="visible" viewport={{ once: true }} variants={fadeInUp}
             className="mb-8 md:mb-12 space-y-2"
           >
-            <h1 className="text-3xl md:text-5xl font-['Playfair_Display'] text-[#D4AF37] font-medium leading-tight">Destination Wedding Photographer</h1>
-            <h2 className="text-2xl md:text-4xl font-['Playfair_Display'] text-[#D4AF37]">In Thailand</h2>
-            <p className="text-gray-400 text-xs md:text-sm mt-4 tracking-wide uppercase font-sans">Operating across this beautiful country</p>
+            <h1 className="text-3xl md:text-5xl font-['Playfair_Display'] text-[#D4AF37] font-medium leading-tight">{t('home.hero.title')}</h1>
+            <h2 className="text-2xl md:text-4xl font-['Playfair_Display'] text-[#D4AF37]">{t('home.hero.subtitle')}</h2>
+            <p className="text-gray-400 text-xs md:text-sm mt-4 tracking-wide uppercase font-sans">{t('home.hero.description')}</p>
           </motion.div>
 
           {/* BOUNCE CARD SECTION - NOW TRIGGERED ON SCROLL */}
@@ -284,7 +287,7 @@ const Home = () => {
             initial="hidden" whileInView="visible" viewport={{ once: true }} variants={fadeInUp}
             className="max-w-3xl mx-auto space-y-6 md:space-y-8"
           >
-            <p className="font-serif text-gray-500 leading-relaxed text-sm md:text-base px-2 md:px-4">As a dedicated team of professional photographers, we specialize in capturing the genuine essence of your most significant life moments. With over a decade of experience, we transform your precious occasions into enduring visual narratives that you'll cherish for a Forever.</p>
+            <p className="font-serif text-gray-500 leading-relaxed text-sm md:text-base px-2 md:px-4">{t('home.intro')}</p>
             <div className="flex justify-center gap-6 text-slate-400">
               <a href="https://www.instagram.com/guyheart_photography/" target="_blank" rel="noopener noreferrer" className="hover:text-amber-400 transition-colors">
                 <FaInstagram size={20} />
@@ -327,8 +330,8 @@ const Home = () => {
                initial="hidden" whileInView="visible" viewport={{ once: true, amount: 0.3 }} variants={fadeInRight}
                className="w-[90%] md:w-[40%] bg-[#7a93a5] text-white p-8 md:p-12 rounded-lg shadow-xl z-10 mt-[-50px] md:mt-0 md:-ml-12 relative"
             >
-              <h3 className="font-serif text-2xl md:text-3xl leading-snug mb-4 md:mb-6">“Captured <span className="text-amber-400">emotions</span>. Evocative tones.”</h3>
-              <p className="font-sans text-xs md:text-sm leading-relaxed opacity-90 mb-6 md:mb-8">As a visual storyteller, We are driven by documenting authentic connections. As a creative, We are fascinated by the interplay of shadow and form. Below are some of our most cherished images illustrating genuine emotions and evocative tones from various locations.</p>
+              <h3 className="font-serif text-2xl md:text-3xl leading-snug mb-4 md:mb-6">“{t('home.captured_emotions.title_part1')} <span className="text-amber-400">{t('home.captured_emotions.title_part2')}</span>{t('home.captured_emotions.title_part3')}”</h3>
+              <p className="font-sans text-xs md:text-sm leading-relaxed opacity-90 mb-6 md:mb-8">{t('home.captured_emotions.description')}</p>
               <p className="font-serif text-sm text-right opacity-80">— Guy Heart Photography</p>
             </motion.div>
           </div>
@@ -337,7 +340,7 @@ const Home = () => {
              initial="hidden" whileInView="visible" viewport={{ once: true }} variants={staggerContainer}
              className="text-center pt-8 border-t border-gray-200"
           >
-            <motion.h4 variants={fadeInUp} className="text-[#7a93a5] uppercase tracking-widest font-serif text-sm mb-10">Featured On</motion.h4>
+            <motion.h4 variants={fadeInUp} className="text-[#7a93a5] uppercase tracking-widest font-serif text-sm mb-10">{t('home.captured_emotions.featured_on')}</motion.h4>
             <div className="grid grid-cols-3 md:flex md:flex-wrap justify-center items-center gap-6 md:gap-12 opacity-70">
               {LOGOS.map((logo, index) => (
                 <motion.div variants={fadeInUp} key={index} className="flex justify-center">
@@ -356,8 +359,8 @@ const Home = () => {
              initial="hidden" whileInView="visible" viewport={{ once: true }} variants={fadeInUp}
              className="text-center mb-12"
           >
-            <h2 className="text-3xl md:text-5xl font-['Playfair_Display'] text-[#D4AF37] font-medium mb-6">Our Gallery</h2>
-            <p className="text-gray-400 text-sm md:text-base max-w-2xl mx-auto leading-relaxed font-serif">Our gallery showcases the heartfelt moments, quiet details, and genuine emotions that make every wedding unique.</p>
+            <h2 className="text-3xl md:text-5xl font-['Playfair_Display'] text-[#D4AF37] font-medium mb-6">{t('home.gallery.title')}</h2>
+            <p className="text-gray-400 text-sm md:text-base max-w-2xl mx-auto leading-relaxed font-serif">{t('home.gallery.description')}</p>
           </motion.div>
           
           {/* Staggered Grid */}
@@ -376,7 +379,7 @@ const Home = () => {
           <motion.div initial={{ opacity: 0 }} whileInView={{ opacity: 1 }} transition={{ delay: 0.5 }} className="text-center">
             {/* UPDATED: Changed Button to Link */}
             <Link to="/portfolio" className="bg-[#7a93a5] text-white font-sans text-sm tracking-widest px-10 py-4 hover:bg-[#607d8b] transition-colors duration-300 shadow-md inline-block">
-              VIEW OUR GALLERY
+              {t('home.gallery.button')}
             </Link>
           </motion.div>
         </div>
@@ -389,14 +392,14 @@ const Home = () => {
            initial="hidden" whileInView="visible" viewport={{ once: true }} variants={fadeInLeft}
            className="w-full md:w-1/2 bg-[#ecf0f3] flex flex-col justify-center items-center text-center p-12 md:p-16 order-2 md:order-1"
         >
-          <h2 className="text-2xl md:text-4xl font-serif text-[#7a93a5] mb-8 leading-snug">A Special <span className="text-amber-400 font-bold">Gift</span> From Guy <br /> Heart Photography</h2>
+          <h2 className="text-2xl md:text-4xl font-serif text-[#7a93a5] mb-8 leading-snug">{t('home.gift.title_part1')} <span className="text-amber-400 font-bold">{t('home.gift.title_part2')}</span> {t('home.gift.title_part3')}</h2>
           <motion.div variants={scaleUp} className="w-48 h-48 md:w-56 md:h-56 rounded-full overflow-hidden border-4 border-white shadow-xl mb-8 relative">
             <img src={gallery7} alt="Wedding Rings Detail" className="w-full h-full object-cover" loading="lazy" />
           </motion.div>
-          <p className="text-[#8fa3b0] font-serif text-lg md:text-xl mb-10 max-w-sm leading-relaxed"><span className="text-amber-400 font-bold">FREE</span> Digital Wedding Album when you book a photo/video package</p>
+          <p className="text-[#8fa3b0] font-serif text-lg md:text-xl mb-10 max-w-sm leading-relaxed"><span className="text-amber-400 font-bold">FREE</span> {t('home.gift.description')}</p>
           {/* UPDATED: Changed Button to Link */}
           <Link to="/portfolio" className="bg-[#7a93a5] text-white font-sans text-sm tracking-widest px-10 py-4 hover:bg-[#607d8b] transition-colors duration-300 shadow-md inline-block">
-            View Full Album
+            {t('home.gift.button')}
           </Link>
         </motion.div>
 
@@ -421,8 +424,8 @@ const Home = () => {
              initial="hidden" whileInView="visible" viewport={{ once: true }} variants={fadeInUp}
              className="text-center mb-16 px-4"
           >
-            <h2 className="text-3xl md:text-5xl font-['Playfair_Display'] text-white font-medium tracking-wide mb-6">WHAT OUR COUPLES SAY</h2>
-            <p className="text-white/80 text-xs md:text-sm font-sans max-w-2xl mx-auto leading-relaxed tracking-wider">Heartfelt stories shared by the people behind the moments we captured — a reflection of the love, trust, and memories that made their day unforgettable.</p>
+            <h2 className="text-3xl md:text-5xl font-['Playfair_Display'] text-white font-medium tracking-wide mb-6">{t('home.reviews.title')}</h2>
+            <p className="text-white/80 text-xs md:text-sm font-sans max-w-2xl mx-auto leading-relaxed tracking-wider">{t('home.reviews.description')}</p>
           </motion.div>
           
           {/* Review 1 */}
@@ -486,8 +489,8 @@ const Home = () => {
              initial="hidden" whileInView="visible" viewport={{ once: true }} variants={fadeInUp}
              className="text-center mb-12 md:mb-24"
           >
-            <h3 className="text-[#7a93a5] font-serif text-xl md:text-3xl uppercase tracking-widest mb-2">WHAT OTHER COUPLES</h3>
-            <h2 className="text-amber-400 font-serif text-2xl md:text-5xl font-bold">LOVED MOST ABOUT US?</h2>
+            <h3 className="text-[#7a93a5] font-serif text-xl md:text-3xl uppercase tracking-widest mb-2">{t('home.reviews.grid_title_1')}</h3>
+            <h2 className="text-amber-400 font-serif text-2xl md:text-5xl font-bold">{t('home.reviews.grid_title_2')}</h2>
           </motion.div>
           <motion.div 
              initial="hidden" whileInView="visible" viewport={{ once: true, amount: 0.1 }} variants={staggerContainer}
@@ -517,7 +520,7 @@ const Home = () => {
              className="text-center mb-12 md:mb-16"
           >
             <h2 className="text-3xl md:text-5xl font-['Playfair_Display'] text-amber-400 font-medium leading-tight">
-              Helping Couples Bring to Life Their <br className="hidden md:block" /> Wedding Dream
+              {t('home.stats.title')}
             </h2>
           </motion.div>
           
@@ -544,7 +547,7 @@ const Home = () => {
              initial="hidden" whileInView="visible" viewport={{ once: true }} variants={fadeInUp}
              className="text-center mb-12 md:mb-16"
           >
-            <h2 className="text-3xl md:text-5xl font-['Playfair_Display'] text-amber-400 font-medium">FAQs</h2>
+            <h2 className="text-3xl md:text-5xl font-['Playfair_Display'] text-amber-400 font-medium">{t('home.faqs.title')}</h2>
           </motion.div>
           <motion.div 
             initial="hidden" whileInView="visible" viewport={{ once: true }} variants={staggerContainer}
@@ -567,8 +570,8 @@ const Home = () => {
              initial="hidden" whileInView="visible" viewport={{ once: true }} variants={fadeInUp}
              className="mb-12"
           >
-            <h2 className="text-3xl md:text-5xl font-['Playfair_Display'] text-[#7a93a5] font-medium mb-6">A Moment To Remember</h2>
-            <p className="text-gray-500 text-sm md:text-base max-w-3xl mx-auto leading-relaxed font-serif">Your special day is more than a celebration—it’s a memory you’ll cherish forever. We capture every heartfelt moment so you can relive the joy again and again.</p>
+            <h2 className="text-3xl md:text-5xl font-['Playfair_Display'] text-[#7a93a5] font-medium mb-6">{t('home.moment.title')}</h2>
+            <p className="text-gray-500 text-sm md:text-base max-w-3xl mx-auto leading-relaxed font-serif">{t('home.moment.description')}</p>
           </motion.div>
 
           {/* 3x3 Grid */}
@@ -587,7 +590,7 @@ const Home = () => {
           <motion.div initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }} transition={{ delay: 0.5 }}>
             {/* UPDATED: Changed Button to Link */}
             <Link to="/portfolio" className="bg-[#7a93a5] text-white font-sans text-sm tracking-widest px-10 py-4 hover:bg-[#607d8b] transition-colors duration-300 shadow-md inline-block">
-              OUR GALLERY
+              {t('home.moment.button')}
             </Link>
           </motion.div>
         </div>
