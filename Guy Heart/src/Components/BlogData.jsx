@@ -1,3 +1,5 @@
+const blogImages = import.meta.glob('/src/assets/Images/Compressed GH/blog/**/*.{jpg,jpeg,png,webp}', { eager: true });
+
 const getBlogImage = (id, suffix = "0") => {
   const folderName = `blog${id}`;
   const fileNameBase = `blog${id}.${suffix}`;
