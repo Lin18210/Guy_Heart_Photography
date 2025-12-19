@@ -108,7 +108,7 @@ const ContactSection = () => {
             {/* Name Fields */}
             <div>
               <label className="block text-[#7a93a5] text-sm mb-2 font-serif">
-                Your & your partners name: (required)
+                Your & your partner's name: (required)
               </label>
               <div className="flex gap-4">
                 <div className="w-1/2">
