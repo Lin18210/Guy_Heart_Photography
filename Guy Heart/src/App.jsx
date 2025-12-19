@@ -17,6 +17,7 @@ import ScrollToTop from "./Components/ScrollToTop.jsx";
 import Contact from "./pages/Contact.jsx";
 import BlogDetail from "./Components/BlogDetails.jsx";
 import Terms from "./pages/Terms.jsx";
+import ChatBubble from "./Components/ChatBubble.jsx";
 
 function App() {
 
@@ -35,6 +36,7 @@ function App() {
         <Route path="/contact" element={<Contact/>}/>
         <Route path="/terms" element={<Terms/>}/>
       </Routes>
+      <ChatBubble />
       <Footer/>
     </Router>
   )
