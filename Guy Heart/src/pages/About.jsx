@@ -84,7 +84,7 @@ const About = () => {
                 <strong className="text-gray-800 font-medium">Guy Heart Photography</strong> is known for elegantly blending natural and artificial light. Their fresh, easy-going style makes subjects feel comfortable, capturing genuine moments and subtle details words can’t describe.
               </p>
               <p>
-                More than just beautiful dresses or brides, Their photos tell a full story, reflecting each subject’s personality. Guy Heart Studio delivers high-quality wedding photography tailored to your style and budget. The final images are <span className="text-amber-600 font-medium">clean, artistic, and timeless</span>, presented in a journal-style album that captures the true essence of your special day.
+                More than just beautiful dresses or brides, Their photos tell a full story, reflecting each subject’s personality. Guy Heart Studio delivers high-quality wedding photography tailored to your style and budget. The final images are <span className="text-[#D4AF37] font-medium">clean, artistic, and timeless</span>, presented in a journal-style album that captures the true essence of your special day.
               </p>
             </motion.div>
             

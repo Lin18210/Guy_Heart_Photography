@@ -91,7 +91,7 @@ return (
             <h4 className="text-lg font-serif font-medium text-slate-600 mb-6">Visit Us</h4>
             <ul className="space-y-2 text-sm">
               <li><Link to="/services" className="hover:text-[#D4AF37] transition-colors border-b border-transparent hover:border-[#D4AF37] pb-0.5 inline-block">Services</Link></li>
-              <li><Link to="/portfolio" className="hover:text-[#D4AF37] transition-colors border-b border-transparent hover:border-[#D4AF37] pb-0.5 inline-block">Portfolio</Link></li>
+              <li><Link to="/portfolio" className="hover:text-[#D4AF37] transition-colors border-b border-transparent hover:border-[#D4AF37] pb-0.5 inline-block">Gallery</Link></li>
               <li><Link to="/video" className="hover:text-[#D4AF37] transition-colors border-b border-transparent hover:border-[#D4AF37] pb-0.5 inline-block">Video</Link></li>
               <li><Link to="/blog" className="hover:text-[#D4AF37] transition-colors border-b border-transparent hover:border-[#D4AF37] pb-0.5 inline-block">Blog</Link></li>
               <li><Link to="/about" className="hover:text-[#D4AF37] transition-colors border-b border-transparent hover:border-[#D4AF37] pb-0.5 inline-block">About</Link></li>

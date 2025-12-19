@@ -3,7 +3,8 @@ import gallery1 from '../assets/All/Picflow Images Dec 11/an-indian-wedding-is-n
 import gallery2 from '../assets/All/Picflow Images Dec 11/couple-of-bride-and-groom-enjoying-romantic-moment-2024-12-22-23-18-19-utc.webp';
 import gallery3 from '../assets/All/Picflow Images Dec 11/young-couple-the-bride-and-groom-walking-along-a-2025-11-24-17-21-49-utc.webp';
 import gallery4 from '../assets/All/Picflow Images Dec 11/young-caucasian-couple-39-s-wedding-day-2025-02-10-00-40-43-utc.webp';
-import gallery6 from '../assets/All/Picflow Images Dec 11/white-yacht-with-sail-set-goes-along-the-island-on-2025-01-10-20-40-33-utc.webp';
+import gallery5 from '../assets/All/Picflow Images Dec 11/white-yacht-with-sail-set-goes-along-the-island-on-2025-01-10-20-40-33-utc.webp';
+import gallery6 from '../assets/Images/Compressed GH/GH/3.webp';
 
 
 const SERVICES_DATA = [
@@ -27,15 +28,21 @@ const SERVICES_DATA = [
   },
   {
     id: 4,
-    image: gallery6,
-    title: "Destination Packages",
-    description: "Customized travel and photography packages across Thailand."
+    image: gallery4,
+    title: "Short Story Film",
+    description: "Coverage by one dedicated cinematographer focusing on key moments with crystal-clear 4K resolution."
   },
    {
     id: 5,
-    image: gallery1,
-    title: "Proposal Shoots",
-    description: "Capturing the exact moment they say yes, discreetly."
+    image: gallery5,
+    title: "Classic Love Film",
+    description: "Seamless coverage with 4K resolution, multiple angles, and professional lighting."
+  },
+   {
+    id: 6,
+    image: gallery6,
+    title: "Classic Love Film",
+    description: "Seamless coverage with 4K resolution, multiple angles, and professional lighting."
   },
 ];
 
