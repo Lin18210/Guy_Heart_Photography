@@ -1,6 +1,7 @@
 import React, { useState, useRef } from 'react'; 
 import { motion, useInView } from 'framer-motion'; 
 import { Link } from 'react-router-dom';
+import { FaInstagram, FaFacebook, FaTiktok, FaEnvelope, FaLine, FaYoutube } from 'react-icons/fa';
 import Heroslider from '../Components/Heroslider';
 import ServicesSlider from '../Components/ServicesSlider';
 import ReviewCard from '../Components/ReviewCard';
@@ -285,10 +286,24 @@ const Home = () => {
           >
             <p className="font-serif text-gray-500 leading-relaxed text-sm md:text-base px-2 md:px-4">As a dedicated team of professional photographers, we specialize in capturing the genuine essence of your most significant life moments. With over a decade of experience, we transform your precious occasions into enduring visual narratives that you'll cherish for a Forever.</p>
             <div className="flex justify-center gap-6 text-slate-400">
-              <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="hover:text-amber-400 cursor-pointer transition-colors"><path d="M22 4s-.7 2.1-2 3.4c1.6 10-9.4 17.3-18 11.6 2.2.1 4.4-.6 6-2C3 15.5.5 9.6 3 5c2.2 2.6 5.6 4.1 9 4-.9-4.2 4-6.6 7-3.8 1.1 0 3-1.2 3-1.2z" /></svg>
-              <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="hover:text-amber-400 cursor-pointer transition-colors"><rect width="20" height="16" x="2" y="4" rx="2" /><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7" /></svg>
-              <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="hover:text-amber-400 cursor-pointer transition-colors"><rect width="20" height="20" x="2" y="2" rx="5" ry="5" /><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z" /><line x1="17.5" x2="17.51" y1="6.5" y2="6.5" /></svg>
-              <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="hover:text-amber-400 cursor-pointer transition-colors"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z" /></svg>
+              <a href="https://www.instagram.com/guyheart_photography/" target="_blank" rel="noopener noreferrer" className="hover:text-amber-400 transition-colors">
+                <FaInstagram size={20} />
+              </a>
+              <a href="https://web.facebook.com/profile.php?id=61582485134150" target="_blank" rel="noopener noreferrer" className="hover:text-amber-400 transition-colors">
+                <FaFacebook size={20} />
+              </a>
+              <a href="mailto:guyheartphotography11@gmail.com" className="hover:text-amber-400 transition-colors">
+                <FaEnvelope size={20} />
+              </a>
+              <a href="https://www.tiktok.com/@guyheartphotography?is_from_webapp=1&sender_device=pc" target="_blank" rel="noopener noreferrer" className="hover:text-amber-400 transition-colors">
+                <FaTiktok size={20} />
+              </a>
+              <a href="https://lin.ee/m6EBMRf" target="_blank" rel="noopener noreferrer" className="hover:text-amber-400 transition-colors">
+                <FaLine size={20} />
+              </a>
+              <a href="https://www.youtube.com/@GuyHeartPhotography" target="_blank" rel="noopener noreferrer" className="hover:text-amber-400 transition-colors">
+                <FaYoutube size={20} />
+              </a>
             </div>
           </motion.div>
         </div>

@@ -76,7 +76,7 @@ const About = () => {
             variants={staggerContainer}
           >
             <motion.h2 variants={fadeInUp} className="text-4xl md:text-5xl font-serif text-amber-600 leading-tight">
-              “ABOUT <br/> <span className="text-gray-900">GUY HEART PHOTOGRAPHY</span>”
+              <span className="text-[#D4AF37]">“ABOUT <br/> <span className="text-gray-900">GUY HEART PHOTOGRAPHY</span>”</span>
             </motion.h2>
             
             <motion.div variants={fadeInUp} className="space-y-6 text-gray-600 text-lg leading-relaxed font-light">
@@ -120,7 +120,7 @@ const About = () => {
             viewport={{ once: true }}
             variants={staggerContainer}
           >
-            <motion.h3 variants={fadeInUp} className="text-3xl md:text-4xl font-serif text-amber-500">
+            <motion.h3 variants={fadeInUp} className="text-3xl md:text-4xl font-serif text-[#D4AF37]">
               The Faces Behind The Camera
             </motion.h3>
             <motion.div variants={fadeInUp} className="w-20 h-1 bg-gray-200" />
@@ -158,7 +158,7 @@ const About = () => {
                viewport={{ once: true }}
                variants={staggerContainer}
              >
-                <motion.h3 variants={fadeInUp} className="text-3xl md:text-4xl font-serif text-amber-500 uppercase tracking-widest">
+                <motion.h3 variants={fadeInUp} className="text-3xl md:text-4xl font-serif text-[#D4AF37] uppercase tracking-widest">
                   The Unseen Work of <br/> a Photographer
                 </motion.h3>
                 <motion.p variants={fadeInUp} className="text-gray-600 leading-relaxed">
@@ -213,7 +213,7 @@ const About = () => {
                  viewport={{ once: true }}
                  transition={{ delay: 0.2 }}
                >
-                 <h3 className="text-4xl md:text-5xl font-serif text-amber-500">Emotion Above Mere Visuals.</h3>
+                 <h3 className="text-4xl md:text-5xl font-serif text-[#D4AF37]">Emotion Above Mere Visuals.</h3>
                  <p className="text-slate-500 text-lg">Without intrusion, we capture the natural unfolding of your emotions, allowing the true essence of your day to shine.</p>
                </motion.div>
 
@@ -244,7 +244,7 @@ const About = () => {
               variants={staggerContainer}
             >
               <motion.div variants={fadeInUp}>
-                 <h3 className="text-4xl font-serif text-slate-800 mb-4">The Heart <span className="text-gray-400">Behind Our Lens</span></h3>
+                 <h3 className="text-4xl font-serif text-[#D4AF37] mb-4">The Heart <span className="text-gray-500">Behind Our Lens</span></h3>
                  <div className="w-16 h-1 bg-amber-500 mb-6"></div>
                  <h4 className="text-xl font-medium text-slate-700 mb-2">Building Connections & Creating Comfort</h4>
                  <p className="text-gray-500 text-sm leading-relaxed">

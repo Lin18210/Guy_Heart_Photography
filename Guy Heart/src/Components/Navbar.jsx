@@ -5,7 +5,7 @@ import LogoImg from '../assets/Logo.png';
 
 const NAV_LINKS = [
   { name: 'Home', href: '/' },
-  { name: 'Portfolio', href: '/portfolio' },
+  { name: 'Gallery', href: '/portfolio' },
   { name: 'Services', href: '/services' },
   { name: 'Video', href: '/video' },
   { name: 'Blog', href: '/blog' },
