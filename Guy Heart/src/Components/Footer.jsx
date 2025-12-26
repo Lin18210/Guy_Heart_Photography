@@ -29,7 +29,7 @@ return (
               </div>
               <div className="flex items-center gap-3">
                 <FaPhone className="text-[#D4AF37]" />
-                <span>+66 933490230</span>
+                <span>{`(+66) 09-3349-0230`}</span>
               </div>
             </div>
           </div>
