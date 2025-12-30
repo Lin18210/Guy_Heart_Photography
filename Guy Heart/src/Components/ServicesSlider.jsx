@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from 'react';
+import AnimatedButton from './AnimatedButton';
 import gallery1 from '../assets/All/Picflow Images Dec 11/an-indian-wedding-is-nothing-short-of-an-extravaga-2025-04-05-21-38-07-utc.webp';
 import gallery2 from '../assets/All/Picflow Images Dec 11/couple-of-bride-and-groom-enjoying-romantic-moment-2024-12-22-23-18-19-utc.webp';
 import gallery3 from '../assets/All/Picflow Images Dec 11/young-couple-the-bride-and-groom-walking-along-a-2025-11-24-17-21-49-utc.webp';
@@ -186,9 +187,9 @@ const ServicesSlider = () => {
 
       {/* Button */}
       <div className="text-center mt-12">
-        <button className="bg-[#7a93a5] text-white font-sans text-xs md:text-sm tracking-widest px-8 py-3 hover:bg-[#607d8b] transition-colors duration-300 shadow-md uppercase">
+        <AnimatedButton to="/services">
           View Our Services
-        </button>
+        </AnimatedButton>
       </div>
     </section>
   );

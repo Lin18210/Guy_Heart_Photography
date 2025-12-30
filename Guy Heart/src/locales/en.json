@@ -2,7 +2,7 @@
   "navbar": {
     "home": "Home",
     "gallery": "Gallery",
-    "services": "Services",
+    "services": "Packages",
     "video": "Video",
     "blog": "Blog",
     "about": "About",
@@ -31,7 +31,7 @@
         "title_part1": "A Special",
         "title_part2": "Gift",
         "title_part3": "From Guy Heart Photography",
-        "description": "FREE Digital Wedding Album when you book a photo/video package",
+        "description": "Digital Wedding Album when you book a photo/video package",
         "button": "View Full Album"
     },
     "reviews": {

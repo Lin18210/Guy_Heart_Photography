@@ -8,6 +8,7 @@ import ServicesSlider from '../Components/ServicesSlider';
 import ReviewCard from '../Components/ReviewCard';
 import ContactSection from '../Components/Contact';
 import BounceCards from '../Components/BounceCard';
+import AnimatedButton from '../Components/AnimatedButton';
 
 // --- LOGO IMAGES ---
 import logo1 from '../assets/Images/Logos/Logo1.png';
@@ -378,9 +379,9 @@ const Home = () => {
           
           <motion.div initial={{ opacity: 0 }} whileInView={{ opacity: 1 }} transition={{ delay: 0.5 }} className="text-center">
             {/* UPDATED: Changed Button to Link */}
-            <Link to="/portfolio" className="bg-[#7a93a5] text-white font-sans text-sm tracking-widest px-10 py-4 hover:bg-[#607d8b] transition-colors duration-300 shadow-md inline-block">
+            <AnimatedButton to="/portfolio">
               {t('home.gallery.button')}
-            </Link>
+            </AnimatedButton>
           </motion.div>
         </div>
       </section>
@@ -397,10 +398,10 @@ const Home = () => {
             <img src={gallery7} alt="Wedding Rings Detail" className="w-full h-full object-cover" loading="lazy" />
           </motion.div>
           <p className="text-[#8fa3b0] font-serif text-lg md:text-xl mb-10 max-w-sm leading-relaxed"><span className="text-amber-400 font-bold">FREE</span> {t('home.gift.description')}</p>
-          {/* UPDATED: Changed Button to Link */}
-          <Link to="/portfolio" className="bg-[#7a93a5] text-white font-sans text-sm tracking-widest px-10 py-4 hover:bg-[#607d8b] transition-colors duration-300 shadow-md inline-block">
+
+          <AnimatedButton to="/portfolio">
             {t('home.gift.button')}
-          </Link>
+          </AnimatedButton>
         </motion.div>
 
         {/* Right Side (Image) Slides Left */}
@@ -589,9 +590,9 @@ const Home = () => {
           {/* Button */}
           <motion.div initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }} transition={{ delay: 0.5 }}>
             {/* UPDATED: Changed Button to Link */}
-            <Link to="/portfolio" className="bg-[#7a93a5] text-white font-sans text-sm tracking-widest px-10 py-4 hover:bg-[#607d8b] transition-colors duration-300 shadow-md inline-block">
+            <AnimatedButton to="/portfolio">
               {t('home.moment.button')}
-            </Link>
+            </AnimatedButton>
           </motion.div>
         </div>
       </section>

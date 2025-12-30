@@ -4,6 +4,7 @@ import { useNavigate, useLocation, Link } from 'react-router-dom';
 import { useTranslation } from 'react-i18next';
 import LogoImg from '../assets/Logo.png';
 import LanguageSelector from './LanguageSelector';
+import AnimatedButton from './AnimatedButton';
 
 const Navbar = () => {
   const [isScrolled, setIsScrolled] = useState(false);
@@ -84,12 +85,12 @@ const Navbar = () => {
                <LanguageSelector isTransparent={isTransparent} />
 
                {/* CTA Button */}
-              <button 
+              <AnimatedButton 
                 onClick={() => handleNavigation('/contact')}
                 className="bg-[#6B8E9B] hover:bg-[#5a7a85] text-white px-6 py-2 rounded text-sm font-medium transition-colors shadow-sm cursor-pointer"
               >
                 {t('navbar.contact')}
-              </button>
+              </AnimatedButton>
             </div>
 
             {/* Mobile Menu Button */}
