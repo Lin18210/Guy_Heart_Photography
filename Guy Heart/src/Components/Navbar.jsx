@@ -86,7 +86,7 @@ const Navbar = () => {
 
                {/* CTA Button */}
               <AnimatedButton 
-                onClick={() => handleNavigation('/contact')}
+                to="/contact"
                 className="bg-[#6B8E9B] hover:bg-[#5a7a85] text-white px-6 py-2 rounded text-sm font-medium transition-colors shadow-sm cursor-pointer"
               >
                 {t('navbar.contact')}
